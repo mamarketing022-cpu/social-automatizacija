@@ -1,0 +1,40 @@
+name: Objavi zakazane objave
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # svakih 15 minuta (GitHub zna kasniti nekoliko minuta)
+  workflow_dispatch: {}      # ručno pokretanje iz GitHub-a
+
+permissions:
+  contents: write
+
+concurrency:
+  group: objavi
+  cancel-in-progress: false
+
+jobs:
+  objavi:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Objavi
+        env:
+          MEDIA_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
+          TOKEN_EMMA: ${{ secrets.TOKEN_EMMA }}
+          TOKEN_NATASA: ${{ secrets.TOKEN_NATASA }}
+          TOKEN_MA_MARKETING: ${{ secrets.TOKEN_MA_MARKETING }}
+          TOKEN_FINAL_TOUCH: ${{ secrets.TOKEN_FINAL_TOUCH }}
+          TOKEN_BLACK_PRINCE: ${{ secrets.TOKEN_BLACK_PRINCE }}
+        run: python alat/objavi.py
+
+      - name: Sačuvaj statuse objava
+        run: |
+          git config user.name "objave-bot"
+          git config user.email "objave-bot@users.noreply.github.com"
+          git add biznisi
+          git diff --cached --quiet || (git commit -m "Statusi objava" && git push)

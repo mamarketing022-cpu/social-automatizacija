@@ -1,0 +1,7 @@
+# Tokeni i lozinke nikad u repozitorij
+.env
+*.token
+__pycache__/
+
+# Screenshotovi profila su samo lokalni uzor (repozitorij je javan)
+biznisi/*/brend/*screenshot*

@@ -1,0 +1,37 @@
+{
+  "_napomena": "ID-eve popunjavamo nakon povezivanja Meta aplikacije. Tokeni NISU ovdje, nego u tajnim varijablama (GitHub Secrets) pod imenom iz polja token_env.",
+  "emma": {
+    "api": "facebook",
+    "page_id": "",
+    "ig_id": "",
+    "token_env": "TOKEN_EMMA",
+    "mreze": ["fb", "ig"]
+  },
+  "natasa": {
+    "api": "facebook",
+    "page_id": "",
+    "ig_id": "",
+    "token_env": "TOKEN_NATASA",
+    "mreze": ["fb", "ig"]
+  },
+  "ma-marketing": {
+    "api": "facebook",
+    "page_id": "",
+    "ig_id": "",
+    "token_env": "TOKEN_MA_MARKETING",
+    "mreze": ["fb", "ig"]
+  },
+  "final-touch": {
+    "api": "facebook",
+    "page_id": "",
+    "ig_id": "",
+    "token_env": "TOKEN_FINAL_TOUCH",
+    "mreze": ["fb", "ig"]
+  },
+  "black-prince": {
+    "api": "instagram",
+    "ig_id": "",
+    "token_env": "TOKEN_BLACK_PRINCE",
+    "mreze": ["ig"]
+  }
+}
