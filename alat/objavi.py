@@ -117,7 +117,7 @@ def ig_kontejner(baza, ig, token, folder, ime, dodatno):
 
 
 def objavi_ig(nalog, token, objava, folder):
-    baza, ig = nalog["api"], nalog["ig_id"]
+    baza, ig = nalog.get("ig_api", nalog["api"]), nalog["ig_id"]
     tekst = objava.get("tekst_ig") or objava.get("tekst_fb", "")
     mediji = objava["mediji"]
     if len(mediji) == 1:
@@ -136,13 +136,15 @@ def objavi(biznis, folder, objava, proba):
     if proba:
         print(f"  [proba] {biznis}: {folder.name} -> {', '.join(mreze)} ({', '.join(objava['mediji'])})")
         return
-    token = os.environ.get(nalog["token_env"])
-    if not token:
-        raise RuntimeError(f"Nema tokena {nalog['token_env']}.")
     rezultat = objava.setdefault("rezultat", {})
     for mreza in mreze:
         if rezultat.get(mreza):
             continue  # već objavljeno u ranijem pokušaju
+        # IG može imati poseban token (Instagram Login) kad nije vezan za FB stranicu.
+        ime_tokena = nalog.get("ig_token_env", nalog["token_env"]) if mreza == "ig" else nalog["token_env"]
+        token = os.environ.get(ime_tokena)
+        if not token:
+            raise RuntimeError(f"Nema tokena {ime_tokena}.")
         funkcija = objavi_fb if mreza == "fb" else objavi_ig
         rezultat[mreza] = funkcija(nalog, token, objava, folder)
         print(f"  {biznis}: {folder.name} objavljeno na {mreza} (id {rezultat[mreza]})")

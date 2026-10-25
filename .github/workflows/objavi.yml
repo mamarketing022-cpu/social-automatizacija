@@ -26,6 +26,7 @@ jobs:
         env:
           MEDIA_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
           TOKEN_EMMA: ${{ secrets.TOKEN_EMMA }}
+          TOKEN_EMMA_IG: ${{ secrets.TOKEN_EMMA_IG }}
           TOKEN_NATASA: ${{ secrets.TOKEN_NATASA }}
           TOKEN_MA_MARKETING: ${{ secrets.TOKEN_MA_MARKETING }}
           TOKEN_FINAL_TOUCH: ${{ secrets.TOKEN_FINAL_TOUCH }}
