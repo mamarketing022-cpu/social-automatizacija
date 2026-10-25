@@ -33,6 +33,23 @@ Svaki biznis ima svoj chat (sesiju) i svoj folder u `biznisi/`.
 - Korisnik uvijek ima zadnju riječ; njegova uputa važi i za buduće objave ako tako kaže,
   i tada je zapisati u `profil.md` tog biznisa.
 
+## Rad u chatu biznisa (svaki biznis ima svoju sesiju)
+
+- Radi SAMO u folderu svog biznisa (`biznisi/<biznis>/`). Ne diraj tuđe foldere, `alat/` ni `.github/`
+  (to se mijenja iz glavnog chata).
+- Pregled za odobrenje: pošalji korisniku medij (SendUserFile) + tekst FB i IG u poruci.
+- Kad korisnik odobri: status `odobreno`, pa `git add biznisi/<biznis>` + commit + `git pull --rebase` + `git push`.
+  Bez push-a GitHub ne vidi objavu i neće je objaviti.
+- Ako korisnik kaže "objavi odmah": učitaj `.env` u okruženje, postavi
+  `MEDIA_BASE_URL=https://raw.githubusercontent.com/mamarketing022-cpu/social-automatizacija/main`,
+  prvo push-aj medij, pa `python alat/objavi.py --sad biznisi/<biznis>/red/<folder>`, pa push statusa.
+- Materijali koje korisnik pošalje idu u `biznisi/<biznis>/materijali/` (originali, ne mijenjati ih).
+- Alati za medije: Python + Pillow (vizuali), ffmpeg (reels od slika/videa, 1080x1920, 15–30 s),
+  fontovi iz C:/Windows/Fonts. Uvijek pogledaj gotov vizual (Read) prije slanja korisniku.
+- Bez materijala: možeš koristiti vlastite starije fotografije biznisa s njihovog IG-a
+  (Graph API `/{ig_id}/media?fields=media_url,media_type,caption`, token iz `.env`) kao podlogu za novi dizajn,
+  ali ne objavljuj istu sliku ponovo bez obrade.
+
 ## Pravila sadržaja
 
 - Jezik i ton iz profila biznisa. Bez izmišljenih cijena, akcija, rokova ili tvrdnji
