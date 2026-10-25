@@ -154,12 +154,16 @@ def sacuvaj(putanja, objava):
     putanja.write_text(json.dumps(objava, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def zakazano_vrijeme(objava):
+    return datetime.fromisoformat(f"{objava['datum']}T{objava['vrijeme']}")
+
+
 def obradi(putanja, sad, proba, odmah=False):
     objava = json.loads(putanja.read_text(encoding="utf-8"))
     if objava.get("status") != "odobreno":
         return
     biznis = putanja.parent.parent.parent.name
-    zakazano = datetime.fromisoformat(f"{objava['datum']}T{objava['vrijeme']}")
+    zakazano = zakazano_vrijeme(objava)
     if not odmah:
         if sad < zakazano:
             return
@@ -188,6 +192,9 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--proba", action="store_true", help="ništa ne šalje, samo ispisuje")
     parser.add_argument("--sad", help="objavi odmah ovu objavu (put do foldera ili objava.json)")
+    parser.add_argument("--cekaj", type=int, default=0, metavar="MIN",
+                        help="ako je odobrena objava na redu u narednih MIN minuta, sačekaj je "
+                             "(GitHub zna kasniti s pokretanjem, pa se pokrećemo ranije)")
     args = parser.parse_args()
     sad = sarajevo_sad()
     print(f"Vrijeme (Sarajevo): {sad:%Y-%m-%d %H:%M}")
@@ -195,8 +202,21 @@ def main():
         putanja = Path(args.sad).resolve()
         obradi(putanja if putanja.suffix == ".json" else putanja / "objava.json", sad, args.proba, odmah=True)
         return
-    for putanja in sorted(BIZNISI.glob("*/red/*/objava.json")):
+    putanje = sorted(BIZNISI.glob("*/red/*/objava.json"))
+    for putanja in putanje:
         obradi(putanja, sad, args.proba)
+    if args.cekaj and not args.proba:
+        granica = sad + timedelta(minutes=args.cekaj)
+        uskoro = sorted({zakazano_vrijeme(o) for o in (json.loads(p.read_text(encoding="utf-8")) for p in putanje)
+                         if o.get("status") == "odobreno" and sad < zakazano_vrijeme(o) <= granica})
+        for vrijeme in uskoro:
+            pauza = (vrijeme - sarajevo_sad()).total_seconds()
+            if pauza > 0:
+                print(f"Čekam objavu u {vrijeme:%H:%M} ({int(pauza // 60)} min)...")
+                time.sleep(pauza + 5)
+            sad = sarajevo_sad()
+            for putanja in putanje:
+                obradi(putanja, sad, args.proba)
 
 
 if __name__ == "__main__":

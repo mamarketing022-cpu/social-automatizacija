@@ -15,6 +15,7 @@ concurrency:
 jobs:
   objavi:
     runs-on: ubuntu-latest
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
 
@@ -31,11 +32,11 @@ jobs:
           TOKEN_MA_MARKETING: ${{ secrets.TOKEN_MA_MARKETING }}
           TOKEN_FINAL_TOUCH: ${{ secrets.TOKEN_FINAL_TOUCH }}
           TOKEN_BLACK_PRINCE: ${{ secrets.TOKEN_BLACK_PRINCE }}
-        run: python alat/objavi.py
+        run: python alat/objavi.py --cekaj 90
 
       - name: Sačuvaj statuse objava
         run: |
           git config user.name "objave-bot"
           git config user.email "objave-bot@users.noreply.github.com"
           git add biznisi
-          git diff --cached --quiet || (git commit -m "Statusi objava" && git push)
+          git diff --cached --quiet || (git commit -m "Statusi objava" && git pull --rebase && git push)
