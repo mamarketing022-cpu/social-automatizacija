@@ -3,7 +3,7 @@
   "emma": {
     "api": "facebook",
     "page_id": "444499102081156",
-    "ig_id": "",
+    "ig_id": "17841469779595740",
     "ig_api": "instagram",
     "token_env": "TOKEN_EMMA",
     "ig_token_env": "TOKEN_EMMA_IG",
@@ -33,7 +33,7 @@
   },
   "black-prince": {
     "api": "instagram",
-    "ig_id": "",
+    "ig_id": "17841404757130953",
     "token_env": "TOKEN_BLACK_PRINCE",
     "mreze": ["ig"]
   }
