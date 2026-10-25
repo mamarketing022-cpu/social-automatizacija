@@ -2,7 +2,7 @@
 
 ## Osnovno
 - Djelatnost: zlatni i srebrni nakit, satovi (Jewelry & Watches Store; npr. Michael Kors satovi, srebro 925)
-- Grad / lokacija: Tuzla, Prekinute Mladosti 2
+- Grad / lokacija: Tuzla, Prekinute mladosti 8 (nova adresa od oktobra 2026; ranije br. 2)
 - Ciljna publika: ?
 - Usluge / proizvodi: premium zlatni i srebrni nakit, unikatni komadi, satovi; sigurna dostava širom BiH
 
