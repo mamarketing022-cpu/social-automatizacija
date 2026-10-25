@@ -30,5 +30,6 @@
     i objaviti ga **dan prije utakmice**.
   - Ako taj dan već ima zakazanu objavu, zamijeniti je (staru u `arhiva/`, status `zamijenjeno`).
     Ako je utakmica dan prije nekog dana koji nije pon/sri/pet, objava ide tog dana, mimo rasporeda.
+  - Više utakmica u nizu: svaka dobija svoj post dan prije (npr. utakmice 3. i 4. → post 2. za 3., post 3. za 4.).
   - Datum, vrijeme i protivnika uvijek provjeriti (web), ne izmišljati.
   - I dalje ide na odobrenje korisniku prije objave.
