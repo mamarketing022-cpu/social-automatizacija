@@ -14,6 +14,7 @@ i ispisuje koje GitHub Secrets treba napraviti.
 
 import getpass
 import json
+import os
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -31,8 +32,9 @@ def get(putanja, **parametri):
 
 def main():
     app_id = "1147688117825200"
-    kratki = getpass.getpass("Zalijepite User token (ne vidi se dok lijepite) i Enter: ").strip()
-    tajna = getpass.getpass("Zalijepite App Secret i Enter: ").strip()
+    kratki = (os.environ.get("FB_USER_TOKEN")
+              or getpass.getpass("Zalijepite User token (ne vidi se dok lijepite) i Enter: ")).strip()
+    tajna = (os.environ.get("FB_APP_SECRET") or getpass.getpass("Zalijepite App Secret i Enter: ")).strip()
 
     dugi = get("oauth/access_token", grant_type="fb_exchange_token", client_id=app_id,
                client_secret=tajna, fb_exchange_token=kratki)["access_token"]

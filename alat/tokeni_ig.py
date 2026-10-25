@@ -13,6 +13,7 @@ Dugotrajni IG token traje 60 dana; alat ga mora osvježavati (refresh).
 
 import getpass
 import json
+import os
 import sys
 import urllib.parse
 import urllib.request
@@ -51,7 +52,8 @@ def main():
 
     kod = urllib.parse.parse_qs(urllib.parse.urlparse(ulaz).query).get("code", [ulaz])[0]
     kod = kod.split("#")[0]
-    tajna = getpass.getpass("Zalijepite Instagram App Secret i Enter: ").strip()
+    tajna = os.environ.get("IG_APP_SECRET") or getpass.getpass("Zalijepite Instagram App Secret i Enter: ")
+    tajna = tajna.strip()
 
     kratki = zahtjev("https://api.instagram.com/oauth/access_token", {
         "client_id": IG_APP_ID, "client_secret": tajna, "grant_type": "authorization_code",

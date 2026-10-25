@@ -7,7 +7,7 @@
 - Usluge / proizvodi: premium zlatni i srebrni nakit, unikatni komadi, satovi; sigurna dostava širom BiH
 
 ## Mreže
-- Instagram: @emmas.jewelry_ (Professional / Business, ~5.4K pratilaca)
+- Instagram: @emmas.jewelry__ (Professional / Business, ~5.4K pratilaca)
 - Facebook stranica: https://www.facebook.com/share/19dMXawASm/
 - Povezivanje: Instagram Login ili preko FB stranice
 
