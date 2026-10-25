@@ -2,8 +2,15 @@
   "datum": "2026-10-26",
   "vrijeme": "14:00",
   "tip": "post",
-  "mediji": ["vizual.jpg"],
+  "mediji": [
+    "vizual.jpg"
+  ],
   "tekst_fb": "Pažnja je valuta interneta.\n\nSvaki dan vaši potencijalni klijenti prođu pored stotina objava. Većina ih ne zadrži ni sekundu.\n\nRazlika nije u budžetu, nego u porukama koje zaustave palac i sistemima koji rade dok vi spavate.\n\nTo radimo u MA Marketingu: content, copywriting i strategija koja pažnju pretvara u klijente.\n\n📩 Pišite nam u poruke ili posjetite www.ma-digitalmarketing.com",
   "tekst_ig": "Pažnja je valuta interneta. 💸\n\nVaši klijenti svaki dan prođu pored stotina objava. Većina ih ne zadrži ni sekundu.\n\nRazlika nije u budžetu, nego u riječima koje zaustave palac i sistemima koji rade dok spavate.\n\nTrošite li pažnju ili je zadržavate? 👇\n\n📩 DM za saradnju | link u bio\n\n#marketing #digitalnimarketing #copywriting #contentmarketing #socialmedia #marketingagencija #balkan #biznis",
-  "status": "odobreno"
+  "status": "objavljeno",
+  "rezultat": {
+    "fb": "727860727079701_122188447346964367",
+    "ig": "17937017088402780"
+  },
+  "objavljeno_u": "2026-10-25T02:49"
 }
