@@ -11,5 +11,9 @@
   ],
   "tekst_fb": "Zavirite u naš svijet nakita. ✨\n\nOgrlice, narukvice, setovi, lanci i satovi – zlatni i srebrni komadi za svaki stil i svaku priliku, pažljivo izloženi i spremni da pronađu svoju novu priču.\n\nSvratite, pogledajte izbor uživo i pronađite komad koji je baš za vas. 💛\n\n📍 Emma's Jewelry, Prekinute mladosti 8, Tuzla\n📦 Sigurna dostava širom BiH\n💌 Narudžbe i pitanja u poruke",
   "tekst_ig": "Zavirite u naš svijet nakita. ✨\n\nOgrlice, narukvice, setovi, lanci i satovi – za svaki stil i svaku priliku. 💛\n\nListajte i recite nam koja vitrina vam je omiljena 👉\n\n📍 Prekinute mladosti 8, Tuzla | 📦 Dostava širom BiH\n💌 Narudžbe u DM\n\n#emmasjewelrytuzla #tuzla #nakit #srebro925 #zlato #idealanpoklon #nakitbih #zlatarna",
-  "status": "odobreno"
+  "status": "greska",
+  "rezultat": {
+    "fb": "444499102081156_122214223646578189"
+  },
+  "greska": "17841469779595740/media: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"A1BeSEx0EfDEDfrgRUh5wAU\"}}"
 }
