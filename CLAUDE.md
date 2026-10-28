@@ -55,4 +55,11 @@ Svaki biznis ima svoj chat (sesiju) i svoj folder u `biznisi/`.
 - Jezik i ton iz profila biznisa. Bez izmišljenih cijena, akcija, rokova ili tvrdnji
   koje nisu u profilu ili materijalima.
 - Muzika u reelsima samo bez autorskih prava (API ne može koristiti Instagram muzičku biblioteku).
+- Reels NE SMIJE biti bez zvuka (tiha audio traka = "bez zvuka" na mreži). Zvuk: originalni zvuk videa,
+  muzika koju je korisnik poslao, ili pjesma iz `muzika/` (samo licencno slobodne). Prije pregleda provjeri:
+  `ffmpeg -i reels.mp4 -af volumedetect -vn -f null NUL` → `max_volume` mora biti iznad -30 dB.
+  Ako nema muzike, javi korisniku umjesto da praviš tihi reels.
+- Reels kodirati sa `-pix_fmt yuv420p` (ne yuvj420p), H.264 + AAC, 30 fps.
+- Uz svaki reels napravi `cover.jpg` (1080x1920, naslovna slika s tekstom) u folderu objave;
+  alat ga sam postavi kao cover na Instagramu. Pošalji ga korisniku u pregledu.
 - Logo, boje i fontovi iz `biznisi/<biznis>/brend/`.

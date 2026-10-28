@@ -79,9 +79,7 @@ def objavi_fb(nalog, token, objava, folder):
     tekst = objava.get("tekst_fb") or objava.get("tekst_ig", "")
     mediji = objava["mediji"]
     if je_video(mediji[0]):
-        r = api("facebook", f"{stranica}/videos", token,
-                {"file_url": javni_url(folder, mediji[0]), "description": tekst})
-        return r.get("id")
+        return objavi_fb_reels(stranica, token, tekst, javni_url(folder, mediji[0]))
     if len(mediji) == 1:
         r = api("facebook", f"{stranica}/photos", token,
                 {"url": javni_url(folder, mediji[0]), "message": tekst})
@@ -93,6 +91,21 @@ def objavi_fb(nalog, token, objava, folder):
     for i, slika in enumerate(slike):
         podaci[f"attached_media[{i}]"] = json.dumps({"media_fbid": slika})
     return api("facebook", f"{stranica}/feed", token, podaci).get("id")
+
+
+def objavi_fb_reels(stranica, token, tekst, url):
+    """Video kao Facebook Reels (ne običan video): start -> upload s linka -> finish."""
+    video = api("facebook", f"{stranica}/video_reels", token, {"upload_phase": "start"})["video_id"]
+    zahtjev = urllib.request.Request(f"https://rupload.facebook.com/video-upload/v23.0/{video}", method="POST",
+                                     headers={"Authorization": f"OAuth {token}", "file_url": url})
+    try:
+        with urllib.request.urlopen(zahtjev, timeout=300) as odgovor:
+            json.loads(odgovor.read())
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f"FB reels upload: {e.read().decode(errors='replace')}") from None
+    api("facebook", f"{stranica}/video_reels", token,
+        {"upload_phase": "finish", "video_id": video, "video_state": "PUBLISHED", "description": tekst})
+    return video
 
 
 def cekaj_ig_kontejner(baza, kontejner, token):
@@ -107,8 +120,15 @@ def cekaj_ig_kontejner(baza, kontejner, token):
 
 
 def ig_kontejner(baza, ig, token, folder, ime, dodatno):
-    if je_video(ime):
-        podaci = {"media_type": "REELS", "video_url": javni_url(folder, ime)}
+    if je_video(ime) and "is_carousel_item" in dodatno:
+        podaci = {"media_type": "VIDEO", "video_url": javni_url(folder, ime)}
+    elif je_video(ime):
+        podaci = {"media_type": "REELS", "video_url": javni_url(folder, ime), "share_to_feed": "true"}
+        # Naslovna slika: cover.jpg iz foldera objave, inače kadar na 1,5 s (ne crni prvi kadar).
+        if (folder / "cover.jpg").exists():
+            podaci["cover_url"] = javni_url(folder, "cover.jpg")
+        else:
+            podaci["thumb_offset"] = "1500"
     else:
         podaci = {"image_url": javni_url(folder, ime)}
     kontejner = api(baza, f"{ig}/media", token, {**podaci, **dodatno})["id"]

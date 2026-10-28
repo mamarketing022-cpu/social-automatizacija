@@ -17,7 +17,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:
+      # Uvijek najnovije stanje grane (ne commit iz trenutka pokretanja): run koji je čekao
+      # u redu inače vidi stare statuse i objavi istu objavu drugi put.
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
 
       - uses: actions/setup-python@v5
         with:
@@ -32,7 +36,9 @@ jobs:
           TOKEN_MA_MARKETING: ${{ secrets.TOKEN_MA_MARKETING }}
           TOKEN_FINAL_TOUCH: ${{ secrets.TOKEN_FINAL_TOUCH }}
           TOKEN_BLACK_PRINCE: ${{ secrets.TOKEN_BLACK_PRINCE }}
-        run: python alat/objavi.py --cekaj 90
+        run: |
+          git pull --ff-only
+          python alat/objavi.py --cekaj 90
 
       - name: Sačuvaj statuse objava
         run: |
