@@ -19,6 +19,9 @@
 - Uvijek uključiti: ?
 - Nikad ne raditi: ?
 
+## Ponude (od korisnika)
+- Nargila 24h – 24 KM (30.10.2026): u cijeni nargila, 3 doze okusa, kocke ugljena, čup, mašice, pipci; grijač NIJE uključen.
+
 ## Raspored
 - Dani: pon (post), sri (video), pet (post)
 - vrijeme_objave: 16:00
