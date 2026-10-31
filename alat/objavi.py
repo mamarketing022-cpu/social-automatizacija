@@ -35,6 +35,10 @@ GRAPH = {"facebook": "https://graph.facebook.com/v23.0", "instagram": "https://g
 # Objava starija od ovoga se više ne objavljuje automatski (npr. server je dugo stajao).
 NAJDUZE_KASNJENJE = timedelta(hours=12)
 
+# Provjera da je objava stvarno na profilu: 10 min nakon objave (najkasnije 6 h poslije).
+PROVJERA_NAKON = timedelta(minutes=10)
+PROVJERA_DO = timedelta(hours=6)
+
 
 def sarajevo_sad():
     """Trenutno vrijeme u Sarajevu (CET/CEST), bez zavisnosti od tzdata."""
@@ -164,6 +168,15 @@ def objavi_ig(nalog, token, objava, folder):
                 return (zadnja.get("data") or [{}])[0].get("id", f"kontejner {kontejner}")
 
 
+def token_za(nalog, mreza):
+    # IG može imati poseban token (Instagram Login) kad nije vezan za FB stranicu.
+    ime_tokena = nalog.get("ig_token_env", nalog["token_env"]) if mreza == "ig" else nalog["token_env"]
+    token = os.environ.get(ime_tokena)
+    if not token:
+        raise RuntimeError(f"Nema tokena {ime_tokena}.")
+    return token
+
+
 def objavi(biznis, folder, objava, proba):
     nalog = NALOZI[biznis]
     mreze = [m for m in objava.get("mreze", nalog["mreze"]) if m in nalog["mreze"]]
@@ -174,11 +187,7 @@ def objavi(biznis, folder, objava, proba):
     for mreza in mreze:
         if rezultat.get(mreza):
             continue  # već objavljeno u ranijem pokušaju
-        # IG može imati poseban token (Instagram Login) kad nije vezan za FB stranicu.
-        ime_tokena = nalog.get("ig_token_env", nalog["token_env"]) if mreza == "ig" else nalog["token_env"]
-        token = os.environ.get(ime_tokena)
-        if not token:
-            raise RuntimeError(f"Nema tokena {ime_tokena}.")
+        token = token_za(nalog, mreza)
         funkcija = objavi_fb if mreza == "fb" else objavi_ig
         rezultat[mreza] = funkcija(nalog, token, objava, folder)
         print(f"  {biznis}: {folder.name} objavljeno na {mreza} (id {rezultat[mreza]})")
@@ -222,6 +231,75 @@ def obradi(putanja, sad, proba, odmah=False):
         sacuvaj(putanja, objava)
 
 
+def postoji(mreza, nalog, token, id_objave, tekst):
+    """Da li je objava i dalje na profilu. Greška koja nije "ne postoji" (npr. token) ide dalje."""
+    baza = "facebook" if mreza == "fb" else nalog.get("ig_api", nalog["api"])
+    try:
+        api(baza, id_objave, token, {"fields": "id"}, metoda="GET")
+        return True
+    except RuntimeError as e:
+        if '"code":100' not in str(e):
+            raise
+    if mreza == "ig":
+        # Instagram ponekad vrati drugi id nego što objava ima; potraži istu objavu po tekstu.
+        zadnje = api(baza, f"{nalog['ig_id']}/media", token, {"fields": "caption", "limit": "5"}, metoda="GET")
+        return any((m.get("caption") or "").strip() == tekst.strip() for m in zadnje.get("data", []))
+    return False
+
+
+def provjeri(putanja, sad):
+    """10 min nakon objave provjeri da je objava stvarno na profilu; ako nije, objavi ponovo (jednom)."""
+    objava = json.loads(putanja.read_text(encoding="utf-8"))
+    if objava.get("status") != "objavljeno" or objava.get("provjereno") or not objava.get("objavljeno_u"):
+        return
+    proslo = sad - datetime.fromisoformat(objava["objavljeno_u"])
+    if not PROVJERA_NAKON <= proslo <= PROVJERA_DO:
+        return
+    biznis, ime = putanja.parent.parent.parent.name, putanja.parent.name
+    nalog = NALOZI[biznis]
+    nema = []
+    for mreza, id_objave in objava.get("rezultat", {}).items():
+        tekst = objava.get(f"tekst_{mreza}") or objava.get("tekst_fb") or objava.get("tekst_ig", "")
+        try:
+            if not postoji(mreza, nalog, token_za(nalog, mreza), id_objave, tekst):
+                nema.append(mreza)
+        except Exception as e:  # noqa: BLE001 - ne znamo stanje, pokušaj u sljedećem krugu
+            print(f"  {biznis}: {ime} provjera na {mreza} nije uspjela ({e}), pokušavam kasnije.")
+            return
+    if not nema:
+        print(f"  {biznis}: {ime} provjereno, objava je na profilu ({', '.join(objava.get('rezultat', {}))}).")
+        objava["provjereno"] = sad.isoformat(timespec="minutes")
+    elif objava.get("ponovljeno"):
+        print(f"  {biznis}: {ime} i dalje nije na {', '.join(nema)} ni nakon ponovne objave.")
+        objava["provjereno"] = sad.isoformat(timespec="minutes")
+        objava["greska"] = f"Objava nije vidljiva na {', '.join(nema)} ni nakon ponovne objave."
+    else:
+        print(f"  {biznis}: {ime} NIJE na {', '.join(nema)}, objavljujem ponovo.")
+        for mreza in nema:
+            objava["rezultat"].pop(mreza)
+        objava["ponovljeno"] = nema
+        try:
+            objavi(biznis, putanja.parent, objava, False)
+            objava["objavljeno_u"] = sad.isoformat(timespec="minutes")  # nova provjera za 10 min
+        except Exception as e:  # noqa: BLE001
+            print(f"  {biznis}: {ime} GREŠKA pri ponovnoj objavi: {e}")
+            objava["greska"] = str(e)
+            objava["status"] = "greska"
+    sacuvaj(putanja, objava)
+
+
+def sljedeci_dogadjaj(putanje, sad, granica):
+    """Najbliže vrijeme (do granice) kad je neka objava na redu za objavu ili provjeru."""
+    vremena = []
+    for p in putanje:
+        o = json.loads(p.read_text(encoding="utf-8"))
+        if o.get("status") == "odobreno":
+            vremena.append(zakazano_vrijeme(o))
+        elif o.get("status") == "objavljeno" and not o.get("provjereno") and o.get("objavljeno_u"):
+            vremena.append(datetime.fromisoformat(o["objavljeno_u"]) + PROVJERA_NAKON)
+    return min((v for v in vremena if sad < v <= granica), default=None)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--proba", action="store_true", help="ništa ne šalje, samo ispisuje")
@@ -237,20 +315,20 @@ def main():
         obradi(putanja if putanja.suffix == ".json" else putanja / "objava.json", sad, args.proba, odmah=True)
         return
     putanje = sorted(BIZNISI.glob("*/red/*/objava.json"))
-    for putanja in putanje:
-        obradi(putanja, sad, args.proba)
+    def krug(sad):
+        for putanja in putanje:
+            obradi(putanja, sad, args.proba)
+            if not args.proba:
+                provjeri(putanja, sad)
+
+    krug(sad)
     if args.cekaj and not args.proba:
         granica = sad + timedelta(minutes=args.cekaj)
-        uskoro = sorted({zakazano_vrijeme(o) for o in (json.loads(p.read_text(encoding="utf-8")) for p in putanje)
-                         if o.get("status") == "odobreno" and sad < zakazano_vrijeme(o) <= granica})
-        for vrijeme in uskoro:
+        while vrijeme := sljedeci_dogadjaj(putanje, sarajevo_sad(), granica):
             pauza = (vrijeme - sarajevo_sad()).total_seconds()
-            if pauza > 0:
-                print(f"Čekam objavu u {vrijeme:%H:%M} ({int(pauza // 60)} min)...")
-                time.sleep(pauza + 5)
-            sad = sarajevo_sad()
-            for putanja in putanje:
-                obradi(putanja, sad, args.proba)
+            print(f"Čekam do {vrijeme:%H:%M} (objava ili provjera, {int(pauza // 60)} min)...", flush=True)
+            time.sleep(max(pauza, 0) + 5)
+            krug(sarajevo_sad())
 
 
 if __name__ == "__main__":

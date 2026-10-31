@@ -38,7 +38,7 @@ jobs:
           TOKEN_BLACK_PRINCE: ${{ secrets.TOKEN_BLACK_PRINCE }}
         run: |
           git pull --ff-only
-          python alat/objavi.py --cekaj 90
+          python -u alat/objavi.py --cekaj 90
 
       - name: Sačuvaj statuse objava
         run: |
