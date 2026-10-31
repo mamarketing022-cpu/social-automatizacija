@@ -147,14 +147,21 @@ def objavi_ig(nalog, token, objava, folder):
         kontejner = api(baza, f"{ig}/media", token,
                         {"media_type": "CAROUSEL", "children": ",".join(djeca), "caption": tekst})["id"]
         cekaj_ig_kontejner(baza, kontejner, token)
-    # Instagram zna javiti FINISHED, a objava ipak odbije s "media is not ready" (2207027) – sačekaj i ponovi.
+    # Instagram zna odbiti s "media is not ready" (2207027), a ponekad ipak objavi. Zato prije
+    # svakog ponovnog pokušaja provjeri je li kontejner već objavljen, da ne nastane duplikat.
     for pokusaj in range(6):
         try:
             return api(baza, f"{ig}/media_publish", token, {"creation_id": kontejner}).get("id")
         except RuntimeError as e:
             if "2207027" not in str(e) or pokusaj == 5:
                 raise
+            print(f"  IG medij nije spreman, pokušaj {pokusaj + 2} za 20 s...")
             time.sleep(20)
+            status = api(baza, kontejner, token, {"fields": "status_code"}, metoda="GET").get("status_code")
+            if status == "PUBLISHED":
+                print("  IG je objavu ipak primio, ne šaljem ponovo.")
+                zadnja = api(baza, f"{ig}/media", token, {"fields": "id", "limit": "1"}, metoda="GET")
+                return (zadnja.get("data") or [{}])[0].get("id", f"kontejner {kontejner}")
 
 
 def objavi(biznis, folder, objava, proba):
