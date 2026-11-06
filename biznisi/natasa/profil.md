@@ -27,3 +27,13 @@
 - vrijeme_objave: 14:00
 
 ## Posebne upute od korisnika
+
+## Strategija rasta (istraživanje + podaci salona, novembar 2026)
+Podaci IG-a (zadnjih 40 objava, lajkovi/komentari): nagradna igra 120/365; Nataša lično 78/6 i 68/7; generičke objave tretmana i proizvoda većinom 3–21/0.
+- Lice i glas Nataše, stvarne klijentice i stvarne fotografije imaju prednost pred generičkim dizajnom proizvoda.
+- Prva rečenica i prvi kadar odmah kažu temu. Reels počinje pravim snimkom, ne karticom, s tekstom jer se dio videa gleda bez zvuka.
+- U tekstu prirodno: usluga + Tuzla i adresa Bosne Srebrene bb. Najviše 5 hashtagova.
+- Svaka objava ima jedan cilj: komentar (stvarno pitanje) ili slanje prijateljici. Bez lažnih tvrdnji i izmišljenih iskustava.
+- FB: isti sadržaj, ali puniji tekst; bez linkova u objavi; Reels nativno; korisnik po želji dijeli u lokalne grupe gdje pravila dozvoljavaju.
+- Bez upoređivanja prije/poslije za bore i slične tvrdnje; kod plaćenih reklama za tretmane provjeriti Meta pravila i ciljati 18+.
+- Ova strategija važi za buduće objave (uputa korisnika). Gotov karusel o Nataši čeka termin u `ideje/karusel_ko-radi-vase-obrve/`; prije objave ga prebaciti u `red/` s novim datumom, statusom `nacrt` i poslati na pregled.
