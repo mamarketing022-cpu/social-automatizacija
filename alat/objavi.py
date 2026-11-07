@@ -78,26 +78,33 @@ def je_video(ime):
     return ime.lower().endswith((".mp4", ".mov"))
 
 
+def lokacija_za(nalog, objava):
+    """ID FB stranice s adresom (ista vrijednost za FB place i IG location_id): iz objave, inače iz naloga."""
+    return objava.get("location_id") or nalog.get("location_id")
+
+
 def objavi_fb(nalog, token, objava, folder):
     stranica = nalog["page_id"]
     tekst = objava.get("tekst_fb") or objava.get("tekst_ig", "")
     mediji = objava["mediji"]
+    lokacija = lokacija_za(nalog, objava)
+    dodatno = {"place": lokacija} if lokacija else {}
     if je_video(mediji[0]):
-        return objavi_fb_reels(stranica, token, tekst, javni_url(folder, mediji[0]))
+        return objavi_fb_reels(stranica, token, tekst, javni_url(folder, mediji[0]), dodatno)
     if len(mediji) == 1:
         r = api("facebook", f"{stranica}/photos", token,
-                {"url": javni_url(folder, mediji[0]), "message": tekst})
+                {"url": javni_url(folder, mediji[0]), "message": tekst, **dodatno})
         return r.get("post_id") or r.get("id")
     # Više slika: prvo neobjavljene fotografije, pa jedna objava koja ih sadrži.
     slike = [api("facebook", f"{stranica}/photos", token,
                  {"url": javni_url(folder, m), "published": "false"})["id"] for m in mediji]
-    podaci = {"message": tekst}
+    podaci = {"message": tekst, **dodatno}
     for i, slika in enumerate(slike):
         podaci[f"attached_media[{i}]"] = json.dumps({"media_fbid": slika})
     return api("facebook", f"{stranica}/feed", token, podaci).get("id")
 
 
-def objavi_fb_reels(stranica, token, tekst, url):
+def objavi_fb_reels(stranica, token, tekst, url, dodatno=None):
     """Video kao Facebook Reels (ne običan video): start -> upload s linka -> finish."""
     video = api("facebook", f"{stranica}/video_reels", token, {"upload_phase": "start"})["video_id"]
     zahtjev = urllib.request.Request(f"https://rupload.facebook.com/video-upload/v23.0/{video}", method="POST",
@@ -108,7 +115,7 @@ def objavi_fb_reels(stranica, token, tekst, url):
     except urllib.error.HTTPError as e:
         raise RuntimeError(f"FB reels upload: {e.read().decode(errors='replace')}") from None
     api("facebook", f"{stranica}/video_reels", token,
-        {"upload_phase": "finish", "video_id": video, "video_state": "PUBLISHED", "description": tekst})
+        {"upload_phase": "finish", "video_id": video, "video_state": "PUBLISHED", "description": tekst, **(dodatno or {})})
     return video
 
 
@@ -144,12 +151,15 @@ def objavi_ig(nalog, token, objava, folder):
     baza, ig = nalog.get("ig_api", nalog["api"]), nalog["ig_id"]
     tekst = objava.get("tekst_ig") or objava.get("tekst_fb", "")
     mediji = objava["mediji"]
+    # Bez lokacije objava ide kao i prije. Djeca karusela je ne primaju, samo sam karusel.
+    lokacija = lokacija_za(nalog, objava)
+    dodatno = {"location_id": lokacija} if lokacija else {}
     if len(mediji) == 1:
-        kontejner = ig_kontejner(baza, ig, token, folder, mediji[0], {"caption": tekst})
+        kontejner = ig_kontejner(baza, ig, token, folder, mediji[0], {"caption": tekst, **dodatno})
     else:
         djeca = [ig_kontejner(baza, ig, token, folder, m, {"is_carousel_item": "true"}) for m in mediji]
         kontejner = api(baza, f"{ig}/media", token,
-                        {"media_type": "CAROUSEL", "children": ",".join(djeca), "caption": tekst})["id"]
+                        {"media_type": "CAROUSEL", "children": ",".join(djeca), "caption": tekst, **dodatno})["id"]
         cekaj_ig_kontejner(baza, kontejner, token)
     # Instagram zna odbiti s "media is not ready" (2207027), a ponekad ipak objavi. Zato prije
     # svakog ponovnog pokušaja provjeri je li kontejner već objavljen, da ne nastane duplikat.

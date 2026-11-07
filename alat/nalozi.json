@@ -14,6 +14,7 @@
     "api": "facebook",
     "page_id": "858659460889970",
     "ig_id": "17841400213486263",
+    "location_id": "858659460889970",
     "token_env": "TOKEN_NATASA",
     "mreze": ["fb", "ig"]
   },

@@ -28,6 +28,8 @@
 
 ## Posebne upute od korisnika
 
+- Kad za objavu trebaju video ili profesionalne slike, koristiti Flow (Google Labs). Ne prikazivati generisane slike kao stvarni rezultat tretmana.
+
 ## Strategija rasta (istraživanje + podaci salona, novembar 2026)
 Podaci IG-a (zadnjih 40 objava, lajkovi/komentari): nagradna igra 120/365; Nataša lično 78/6 i 68/7; generičke objave tretmana i proizvoda većinom 3–21/0.
 - Lice i glas Nataše, stvarne klijentice i stvarne fotografije imaju prednost pred generičkim dizajnom proizvoda.
