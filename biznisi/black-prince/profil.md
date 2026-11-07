@@ -27,9 +27,14 @@
 - vrijeme_objave: 16:00
 
 ## Posebne upute od korisnika
+- Ne ponavljati isti vizual ni istu temu (uputa od 30.10.2026).
+- Objave koje nisu o BiH reprezentaciji: bez slika s BiH zastavama (uputa od 30.10.2026).
+- Sadržaj se pravi po `strategija.md` (uputa od 6.11.2026).
+- Vizuali: novi kadrovi (i AI) u stilu profila, ne kopija njihovih slika; moraju izgledati vrhunski (uputa od 6.11.2026).
+- AI kadrovi moraju koristiti ambijent stvarnog lokala (prostorije kafića kao referenca); video se pravi Veom preko Google Flowa, ne Higgsfieldom (uputa od 7.11.2026).
 - **Bitne utakmice imaju prednost nad rasporedom** (uputa od 25.10.2026, važi trajno):
   - Redovne objave idu po rasporedu, osim kad je bitna utakmica (npr. BiH reprezentacija, Liga prvaka – velike utakmice).
-  - Tada napraviti post za utakmicu (stil kao njihovi raniji: stadion, grbovi/igrači, datum, vrijeme, "Rezervacije u DM")
+  - Tada napraviti post za utakmicu (stil kao njihovi raniji: lijevo zastava domaćina, desno zastava gosta, 2–3 glavna igrača, datum, vrijeme, "Rezervacije u DM")
     i objaviti ga **dan prije utakmice**.
   - Ako taj dan već ima zakazanu objavu, zamijeniti je (staru u `arhiva/`, status `zamijenjeno`).
     Ako je utakmica dan prije nekog dana koji nije pon/sri/pet, objava ide tog dana, mimo rasporeda.
