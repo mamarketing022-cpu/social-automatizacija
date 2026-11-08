@@ -38,4 +38,4 @@ Podaci IG-a (zadnjih 40 objava, lajkovi/komentari): nagradna igra 120/365; Nata�
 - Svaka objava ima jedan cilj: komentar (stvarno pitanje) ili slanje prijateljici. Bez lažnih tvrdnji i izmišljenih iskustava.
 - FB: isti sadržaj, ali puniji tekst; bez linkova u objavi; Reels nativno; korisnik po želji dijeli u lokalne grupe gdje pravila dozvoljavaju.
 - Bez upoređivanja prije/poslije za bore i slične tvrdnje; kod plaćenih reklama za tretmane provjeriti Meta pravila i ciljati 18+.
-- Ova strategija važi za buduće objave (uputa korisnika). Gotov karusel o Nataši čeka termin u `ideje/karusel_ko-radi-vase-obrve/`; prije objave ga prebaciti u `red/` s novim datumom, statusom `nacrt` i poslati na pregled.
+- Ova strategija važi za buduće objave (uputa korisnika). Karusel o Nataši je zakazan kao nacrt za 16.11.

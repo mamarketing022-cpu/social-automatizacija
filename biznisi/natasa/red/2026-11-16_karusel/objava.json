@@ -1,5 +1,5 @@
 {
-  "datum": null,
+  "datum": "2026-11-16",
   "vrijeme": "14:00",
   "tip": "karusel",
   "mediji": [
@@ -16,5 +16,5 @@
     "#tuzla",
     "#kozmetickisalonnatasa"
   ],
-  "status": "sacuvano"
+  "status": "nacrt"
 }
