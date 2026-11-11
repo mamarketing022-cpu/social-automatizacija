@@ -14,7 +14,12 @@
     "#tuzla",
     "#kozmetickisalonnatasa"
   ],
-  "status": "odobreno",
+  "status": "objavljeno",
   "cover": "cover.jpg",
-  "muzika": "HeyGen katalog muzike, track 87099e39642946f2bc600184349141ff (elegant luxury pop)"
+  "muzika": "HeyGen katalog muzike, track 87099e39642946f2bc600184349141ff (elegant luxury pop)",
+  "rezultat": {
+    "fb": "971411368977368",
+    "ig": "18116338088606942"
+  },
+  "objavljeno_u": "2026-11-11T14:00"
 }
