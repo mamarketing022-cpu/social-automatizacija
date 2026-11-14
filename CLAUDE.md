@@ -50,6 +50,26 @@ Svaki biznis ima svoj chat (sesiju) i svoj folder u `biznisi/`.
   (Graph API `/{ig_id}/media?fields=media_url,media_type,caption`, token iz `.env`) kao podlogu za novi dizajn,
   ali ne objavljuj istu sliku ponovo bez obrade.
 
+## Trendovi i stalni rast (svake sedmice, prije pravljenja objava)
+
+Cilj: sistem ostaje isti (pon/sri/pet, odobrenje, brend), a svake sedmice malo
+probamo nešto novo iz trenda u niši i zadržimo ono što se pokaže boljim.
+
+1. **Izmjeri naše:** `python alat/rezultati.py <biznis>` → `biznisi/<biznis>/trendovi/rezultati.md`
+   (IG lajkovi i komentari po objavi, prosjek po tipu, kako su prošli prošli eksperimenti).
+2. **Istraži nišu na internetu (WebSearch, 3–5 pretraga):** šta je ovaj mjesec u trendu na IG/FB za
+   djelatnost biznisa (formati reelsa, hookovi, karusel ideje, sezonske teme, lokalni rast),
+   plus uspješni nalozi iz niše ako se mogu pogledati javno. Samo provjereni izvori, bez izmišljanja.
+3. **Zapiši** `biznisi/<biznis>/trendovi/GGGG-MM-DD.md` (datum ponedjeljka): 3 trenda kratko + izvor,
+   koji jedan probamo ove sedmice i zašto, šta je naučeno iz `rezultati.md`.
+4. **Jedan trend-eksperiment sedmično:** samo JEDNA od tri objave (najčešće srijeda, reels) se pravi po
+   trendu, prilagođena brendu i profilu. Ostale dvije po starom. U njen `objava.json` dodati
+   `"trend": "<kratak opis trenda>"`. Pravila sadržaja i odobrenje važe kao i uvijek
+   (bez tuđe muzike, bez izmišljenih tvrdnji, bez kopiranja tuđeg sadržaja).
+5. **Zadrži pobjednike:** ako je eksperiment bolji od prosjeka (vidi `rezultati.md` iduće sedmice),
+   upiši ga u `profil.md` pod `## Šta radi kod nas` i koristi ga češće; ako je slabiji, ne ponavljaj ga.
+   Korisniku u pregledu sedmice napiši jednu rečenicu: koji trend probamo i kako je prošao prošli.
+
 ## Pravila sadržaja
 
 - Jezik i ton iz profila biznisa. Bez izmišljenih cijena, akcija, rokova ili tvrdnji
