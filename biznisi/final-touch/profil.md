@@ -1,5 +1,8 @@
 # Profil biznisa: Final Touch – Lakiranje i poliranje
 
+> **ISKLJUČEN IZ PLANA od 14.11.2026. (odluka korisnika).** Ne praviti niti objavljivati nove objave
+> dok korisnik ne kaže da se biznis vraća u plan.
+
 ## Osnovno
 - Djelatnost: auto detailing
 - Usluge: lakiranje, korekcija laka, poliranje, detailing, dubinsko čišćenje, farovi

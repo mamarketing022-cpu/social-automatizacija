@@ -7,5 +7,5 @@ Korisnik ima full pristup svim FB stranicama. Svi IG nalozi su Professional.
 | Emma's Jewelry | emma | @emmas.jewelry__ | https://www.facebook.com/share/19dMXawASm/ | FB + IG | FB preko stranice, IG preko Instagram Login (token 60 dana) | zlatni/srebrni nakit, satovi |
 | Kozmetički salon Nataša | natasa | @kozmeticki_salon_natasa_o | https://www.facebook.com/share/1E31aBQPgL/ | FB + IG | preko FB stranice (nema IG šifru) | kozmetički salon |
 | MA Marketing | ma-marketing | @marketing.ma1 | https://www.facebook.com/share/1F82HkJKiV/ | FB + IG | preko FB stranice | marketinška agencija |
-| Final Touch | final-touch | @finall_touch_ | https://www.facebook.com/share/19j12J1up7/ | FB + IG | preko FB stranice | auto detailing |
+| Final Touch (**isključen iz plana od 14.11.2026.**) | final-touch | @finall_touch_ | https://www.facebook.com/share/19j12J1up7/ | FB + IG | preko FB stranice | auto detailing |
 | Black Prince Lounge Bar | black-prince | @blackprincelounge | — (samo IG) | samo IG | Instagram Login (direktno) | hookah lounge bar |
