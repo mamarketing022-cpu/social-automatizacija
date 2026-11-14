@@ -1,0 +1,6 @@
+# Nalozi iz niše koje pratimo (Business/Creator). Jedan po redu; # = komentar.
+# Dodaj lokalne konkurente (Tuzla/BiH/regija) i velike naloge iz niše. Provjera: python alat/nisa.py <biznis>
+mobhookah       # hookah brend
+alfakherofficial
+steamulation
+kingsofshisha

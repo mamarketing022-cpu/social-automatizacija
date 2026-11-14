@@ -52,23 +52,25 @@ Svaki biznis ima svoj chat (sesiju) i svoj folder u `biznisi/`.
 
 ## Trendovi i stalni rast (svake sedmice, prije pravljenja objava)
 
-Cilj: sistem ostaje isti (pon/sri/pet, odobrenje, brend), a svake sedmice malo
-probamo nešto novo iz trenda u niši i zadržimo ono što se pokaže boljim.
+Cilj: sistem ostaje isti (pon/sri/pet, odobrenje, brend), a svake sedmice jedna objava
+prati ono što je u niši u trendu, napravljena od NAŠIH materijala, i zadržimo ono što radi.
 
-1. **Izmjeri naše:** `python alat/rezultati.py <biznis>` → `biznisi/<biznis>/trendovi/rezultati.md`
-   (IG lajkovi i komentari po objavi, prosjek po tipu, kako su prošli prošli eksperimenti).
-2. **Istraži nišu na internetu (WebSearch, 3–5 pretraga):** šta je ovaj mjesec u trendu na IG/FB za
-   djelatnost biznisa (formati reelsa, hookovi, karusel ideje, sezonske teme, lokalni rast),
-   plus uspješni nalozi iz niše ako se mogu pogledati javno. Samo provjereni izvori, bez izmišljanja.
-3. **Zapiši** `biznisi/<biznis>/trendovi/GGGG-MM-DD.md` (datum ponedjeljka): 3 trenda kratko + izvor,
-   koji jedan probamo ove sedmice i zašto, šta je naučeno iz `rezultati.md`.
-4. **Jedan trend-eksperiment sedmično:** samo JEDNA od tri objave (najčešće srijeda, reels) se pravi po
-   trendu, prilagođena brendu i profilu. Ostale dvije po starom. U njen `objava.json` dodati
-   `"trend": "<kratak opis trenda>"`. Pravila sadržaja i odobrenje važe kao i uvijek
-   (bez tuđe muzike, bez izmišljenih tvrdnji, bez kopiranja tuđeg sadržaja).
-5. **Zadrži pobjednike:** ako je eksperiment bolji od prosjeka (vidi `rezultati.md` iduće sedmice),
-   upiši ga u `profil.md` pod `## Šta radi kod nas` i koristi ga češće; ako je slabiji, ne ponavljaj ga.
-   Korisniku u pregledu sedmice napiši jednu rečenicu: koji trend probamo i kako je prošao prošli.
+1. **Trendovi drugih u niši:** `python alat/nisa.py <biznis>` → `biznisi/<biznis>/trendovi/nisa.md`.
+   Prati naloge iz `trendovi/uzori.txt` (Business/Creator nalozi iz niše: lokalni konkurenti + veliki
+   nalozi) i pokazuje njihove objave koje su iskočile iznad njihovog prosjeka: format, hook, hashtagovi.
+   Ako nalog nije dostupan, zamijeni ga drugim. Dopuni web pretragom (2–3) za sezonske teme niše.
+2. **Naše objave:** `python alat/rezultati.py <biznis>` → `trendovi/rezultati.md` (šta kod nas radi,
+   kako su prošli prošli eksperimenti).
+3. **Spoji:** zapiši `trendovi/GGGG-MM-DD.md` (datum ponedjeljka): 3 trenda iz niše (s linkom na objavu),
+   šta od toga odgovara nama prema `rezultati.md`, i koji jedan probamo ove sedmice.
+4. **Jedan trend-eksperiment sedmično:** JEDNA od tri objave (najčešće srijeda, reels) preuzima
+   format/ideju trenda (hook, struktura, tip videa, karusel), ali s našim fotografijama/videima,
+   brendom i tekstom. Nikad ne kopirati tuđi sadržaj, tekst ni muziku. U `objava.json` dodati
+   `"trend": "<kratko: šta smo preuzeli i od koga>"`. Ostale dvije objave po starom.
+   Pravila sadržaja i odobrenje važe kao i uvijek.
+5. **Zadrži pobjednike:** ako je eksperiment bolji od prosjeka (`rezultati.md` iduće sedmice),
+   upiši ga u `profil.md` pod `## Šta radi kod nas` i koristi češće; ako je slabiji, ne ponavljaj.
+   Korisniku u pregledu sedmice jedna rečenica: koji trend probamo i kako je prošao prošli.
 
 ## Pravila sadržaja
 
