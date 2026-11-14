@@ -1,7 +1,7 @@
 # Nalozi iz niše koje pratimo (Business/Creator). Jedan po redu; # = komentar.
 # Dodaj lokalne konkurente (Tuzla/BiH/regija) i velike naloge iz niše. Provjera: python alat/nisa.py <biznis>
-phibrows        # PMU obrve, svjetski brend
-tinadavies      # PMU obrve, edukacija
-browcode
-hudabeauty      # beauty trendovi, velika publika
-permablend
+phiacademy      # PMU obrve, edukacija (Phi)
+tinadavies      # PMU obrve
+browcode        # obrve i laminacija
+anastasiabeverlyhills  # obrve, beauty
+hudabeauty      # beauty trendovi

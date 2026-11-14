@@ -60,7 +60,8 @@ def prikupi(biznis, token):
         except RuntimeError as e:
             pregled.append(f"- @{ime}: nije dostupan ({'nije Business/Creator ili ne postoji' if 'Invalid user' in str(e) or '110' in str(e) else str(e)[:80]})")
             continue
-        sve = podaci.get("media", {}).get("data", [])
+        # Objave sa sakrivenim lajkovima nemaju like_count i kvarile bi medijan.
+        sve = [o for o in podaci.get("media", {}).get("data", []) if "like_count" in o]
         medijan = statistics.median([angazman(o) for o in sve]) if sve else 0
         nove = [o for o in sve if datetime.strptime(o["timestamp"][:19], "%Y-%m-%dT%H:%M:%S").replace(tzinfo=timezone.utc) >= granica]
         pregled.append(f"- @{ime}: {podaci.get('followers_count', '?')} pratilaca, {len(nove)} objava u {DANA} dana, medijan {medijan:g}")
@@ -99,6 +100,7 @@ def izvjestaj(biznis, objave, pregled):
 
 
 def main():
+    sys.stdout.reconfigure(encoding="utf-8")
     ucitaj_env()
     token = os.environ.get("TREND_TOKEN")
     if not token:

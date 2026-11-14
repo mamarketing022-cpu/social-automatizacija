@@ -2,6 +2,7 @@
 # Dodaj lokalne konkurente (Tuzla/BiH/regija) i velike naloge iz niše. Provjera: python alat/nisa.py <biznis>
 garyvee         # marketing savjeti, reels
 hubspot
-later           # IG trendovi i savjeti
 buffer
-socialmediaexaminer
+neilpatel
+hootsuite
+canva

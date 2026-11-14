@@ -52,10 +52,14 @@ def main():
         redovi.append(f"{nalog['token_env']}={stranica['access_token']}")
         print(f"  OK {biznis}: {stranica['name']}")
 
+    # Dugotrajni user token (60 dana) za alat/nisa.py; treba dozvolu instagram_manage_insights.
+    trend = [f"TREND_TOKEN={dugi}"]
+
     env = KORIJEN / ".env"
     postojeci = [r for r in (env.read_text(encoding="utf-8").splitlines() if env.exists() else [])
-                 if r.split("=", 1)[0] not in {x.split("=", 1)[0] for x in redovi}]
-    env.write_text("\n".join(postojeci + redovi) + "\n", encoding="utf-8")
+                 if r.split("=", 1)[0] not in {x.split("=", 1)[0] for x in redovi + trend}]
+    env.write_text("\n".join(postojeci + redovi + trend) + "\n", encoding="utf-8")
+    print("  OK TREND_TOKEN (trendovi u niši, traje 60 dana)")
     print(f"\nTokeni su upisani u {env} (samo na ovom računaru).")
     print("Na GitHubu napravite Secrets s ovim imenima:", ", ".join(r.split("=", 1)[0] for r in redovi))
 
