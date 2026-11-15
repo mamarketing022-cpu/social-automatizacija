@@ -30,3 +30,4 @@
 - (2026-10-30) Glavni izvor materijala je web stranica https://www.emazlatoisrebro.com: odatle uzimati slike proizvoda i birati ono što će biti najpopularnije. Činjenice (gramaža, popusti na dukate, usluge) samo kako pišu na sajtu. Dnevnu cijenu zlata/srebra ne stavljati u objave jer se mijenja.
 - Proizvode ne nazivati tuđim brendom u objavama (npr. "Pandora" sa sajta → "nježno srebrno prstenje").
 - (2026-11-06) Objave prave po planu lokalnog rasta: vidi strategija-rasta.md.
+- (2026-11-15) Cijene komada sa emazlatoisrebro.com smiju u objave kad pomažu (korisnik). Uzeti cijenu sa stranice proizvoda na dan pravljenja; za zlato radije bez cijene jer prati dnevnu cijenu.
