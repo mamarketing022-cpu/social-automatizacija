@@ -1,6 +1,6 @@
 # Rezultati objava – emma
 
-Ažurirano: 14.11.2026. 21:00. Instagram; bodovi = lajkovi + 3×komentari.
+Ažurirano: 15.11.2026. 10:15. Instagram; bodovi = lajkovi + 3×komentari.
 Prosjek svih objava: **5.9** bodova (8 objava).
 
 ## Po tipu objave

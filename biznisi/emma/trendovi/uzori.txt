@@ -6,3 +6,5 @@ missomalondon
 kendrascott
 pandora
 swarovski
+# Lokalni / regionalni (dodano 15.11.)
+zlataragoldshop  # zlatara, BiH (sa OLX.ba)
