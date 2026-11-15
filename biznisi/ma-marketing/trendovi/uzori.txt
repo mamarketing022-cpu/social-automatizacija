@@ -6,3 +6,6 @@ buffer
 neilpatel
 hootsuite
 canva
+agens.marketing # BiH, digitalni marketing (provjereno 15.11.)
+omedia.ba       # BiH agencija
+onzelabs        # Sarajevo, dizajn i digitalni marketing
