@@ -5,7 +5,13 @@
 - Web: www.ma-digitalmarketing.com
 - Poruka: "Pažnja je valuta interneta. Mi pomažemo biznisima da je zadrže.
   Riječi koje zatvaraju. Sistemi koji rade dok spavaš."
-- Usluge / proizvodi: ?
+- Sjedište: Tuzla, rad za firme iz cijele BiH (izvor: ma-digitalmarketing.com, 15.11.2026.)
+- Usluge (s weba): SEO i AI optimizacija (uklj. lokalni SEO za Google Mape), Google Ads, Meta Ads, izrada web stranica,
+  održavanje društvenih mreža, slikanje proizvoda, snimanje Reels i TikTok videa, snimanje UGC videa
+- Ponuda s weba: besplatna analiza (sajt, SEO pozicije, društvene mreže); bez dugoročnih ugovora; javljamo se u roku od 24 sata
+- Rezultati klijenata s weba (smiju se navesti samo ovako): EM Shop Auto Kozmetika – prvo mjesto na Googleu za manje od
+  mjesec dana, prodaja veća od 40%; Zlatara Ema Jewelry – prva u kategoriji na Google mapi; radili i za Zlatarnu Korzo,
+  VIP Transfer Tuzla, Salon Revital Bihać
 
 ## Mreže
 - Instagram: @marketing.ma1 (Professional)
@@ -25,6 +31,8 @@
 - vrijeme_objave: 14:00
 
 ## Posebne upute od korisnika
+- Objave praviti tako da mogu ići i kao plaćena reklama (korisnik, 15.11.2026.): jasna poruka u prvoj sekundi/slici,
+  jedan poziv na akciju, bez „link u bio“ u tekstu reklame, bez tuđih logotipa i bez obećanja rezultata.
 
 ## Strategija lokalnog rasta (istraživanje, novembar 2026)
 Polazno stanje: IG 27 pratilaca, FB 257, po objavi 0–2 lajka i bez komentara.
