@@ -1,6 +1,6 @@
 # Rezultati objava – black-prince
 
-Ažurirano: 14.11.2026. 20:57. Instagram; bodovi = lajkovi + 3×komentari.
+Ažurirano: 15.11.2026. 10:15. Instagram; bodovi = lajkovi + 3×komentari.
 Prosjek svih objava: **10.7** bodova (10 objava).
 
 ## Po tipu objave
