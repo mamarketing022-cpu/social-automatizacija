@@ -1,6 +1,6 @@
 # Rezultati objava – natasa
 
-Ažurirano: 14.11.2026. 20:58. Instagram; bodovi = lajkovi + 3×komentari.
+Ažurirano: 15.11.2026. 10:10. Instagram; bodovi = lajkovi + 3×komentari.
 Prosjek svih objava: **24.2** bodova (8 objava).
 
 ## Po tipu objave
