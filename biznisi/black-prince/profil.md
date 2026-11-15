@@ -32,6 +32,7 @@
 - Sadržaj se pravi po `strategija.md` (uputa od 6.11.2026).
 - Vizuali: novi kadrovi (i AI) u stilu profila, ne kopija njihovih slika; moraju izgledati vrhunski (uputa od 6.11.2026).
 - AI kadrovi moraju koristiti ambijent stvarnog lokala (prostorije kafića kao referenca); video se pravi Veom preko Google Flowa, ne Higgsfieldom (uputa od 7.11.2026).
+- Video mora prikazivati NAŠ lokal kakav jeste: AI video koji izgleda kao drugi lokal se odbija. Za reels prvo koristiti prave snimke s profila/od korisnika; AI samo ako je prostor prepoznatljivo isti (uputa od 15.11.2026).
 - **Bitne utakmice imaju prednost nad rasporedom** (uputa od 25.10.2026, važi trajno):
   - Redovne objave idu po rasporedu, osim kad je bitna utakmica (npr. BiH reprezentacija, Liga prvaka – velike utakmice).
   - Tada napraviti post za utakmicu (stil kao njihovi raniji: lijevo zastava domaćina, desno zastava gosta, 2–3 glavna igrača, datum, vrijeme, "Rezervacije u DM")
