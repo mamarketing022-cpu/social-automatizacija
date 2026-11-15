@@ -1,12 +1,12 @@
 # Trendovi u niši – black-prince
 
-Ažurirano: 15.11.2026. 10:04. Zadnjih 30 dana, nalozi iz `uzori.txt`.
+Ažurirano: 15.11.2026. 10:12. Zadnjih 30 dana, nalozi iz `uzori.txt`.
 Iskakanje = angažman objave / uobičajeni (medijan) angažman tog naloga; 3× znači 3 puta bolje od njihovog prosjeka.
 
 ## Praćeni nalozi
 
 - @hookahplace: 35880 pratilaca, 4 objava u 30 dana, medijan 38
-- @sohohouse: 1743930 pratilaca, 18 objava u 30 dana, medijan 3429
+- @sohohouse: 1743929 pratilaca, 18 objava u 30 dana, medijan 3429
 - @noburestaurants: 320077 pratilaca, 10 objava u 30 dana, medijan 437
 - @starbuzztobacco: 29188 pratilaca, 11 objava u 30 dana, medijan 11
 
