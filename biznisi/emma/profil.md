@@ -31,3 +31,4 @@
 - Proizvode ne nazivati tuđim brendom u objavama (npr. "Pandora" sa sajta → "nježno srebrno prstenje").
 - (2026-11-06) Objave prave po planu lokalnog rasta: vidi strategija-rasta.md.
 - (2026-11-15) Cijene komada sa emazlatoisrebro.com smiju u objave kad pomažu (korisnik). Uzeti cijenu sa stranice proizvoda na dan pravljenja; za zlato radije bez cijene jer prati dnevnu cijenu.
+- (2026-11-15) Ako korisnik nije poslao materijale: proizvode i slike uzimati SAMO sa emazlatoisrebro.com, ne sa IG profila. Svaki komad nakita smije biti samo u jednoj objavi: prije odabira provjeriti red/ i arhiva/ (objavljene objave).
