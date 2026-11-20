@@ -17,5 +17,11 @@
     "#salontuzla",
     "#kozmetickisalonnatasa"
   ],
-  "status": "odobreno"
+  "status": "objavljeno",
+  "rezultat": {
+    "fb": "858659460889970_1746746314043955",
+    "ig": "17964925862996601"
+  },
+  "objavljeno_u": "2026-11-20T14:00",
+  "provjereno": "2026-11-20T14:10"
 }
