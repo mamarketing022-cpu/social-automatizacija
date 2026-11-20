@@ -1,47 +1,46 @@
 # Trendovi u niši – ma-marketing
 
-Ažurirano: 15.11.2026. 10:27. Zadnjih 30 dana, nalozi iz `uzori.txt`.
+Ažurirano: 20.11.2026. 18:05. Zadnjih 30 dana, nalozi iz `uzori.txt`.
 Iskakanje = angažman objave / uobičajeni (medijan) angažman tog naloga; 3× znači 3 puta bolje od njihovog prosjeka.
 
 ## Praćeni nalozi
 
-- @garyvee: 12271994 pratilaca, 25 objava u 30 dana, medijan 1903
-- @hubspot: 664540 pratilaca, 11 objava u 30 dana, medijan 213
-- @buffer: 109460 pratilaca, 7 objava u 30 dana, medijan 66
-- @neilpatel: 680338 pratilaca, 25 objava u 30 dana, medijan 109
-- @hootsuite: 235971 pratilaca, 4 objava u 30 dana, medijan 70
-- @canva: 2649042 pratilaca, 17 objava u 30 dana, medijan 607
-- @agens.marketing: 2032 pratilaca, 0 objava u 30 dana, medijan 17
+- @garyvee: 12299403 pratilaca, 25 objava u 30 dana, medijan 144
+- @hubspot: 664989 pratilaca, 11 objava u 30 dana, medijan 197
+- @buffer: 109474 pratilaca, 7 objava u 30 dana, medijan 75
+- @neilpatel: 680458 pratilaca, 25 objava u 30 dana, medijan 91
+- @hootsuite: 235836 pratilaca, 5 objava u 30 dana, medijan 57
+- @canva: 2652544 pratilaca, 20 objava u 30 dana, medijan 672
+- @agens.marketing: 2028 pratilaca, 1 objava u 30 dana, medijan 17
 - @omedia.ba: 1178 pratilaca, 0 objava u 30 dana, medijan 5
 - @onzelabs: 303 pratilaca, 0 objava u 30 dana, medijan 29.5
 
 ## Koji format iskače
 
-- karusel: prosječno iskakanje 7.8× (18 objava)
-- reels: prosječno iskakanje 6.6× (54 objava)
-- slika: prosječno iskakanje 5.9× (16 objava)
-- video: prosječno iskakanje 1.7× (1 objava)
+- karusel: prosječno iskakanje 32.2× (22 objava)
+- reels: prosječno iskakanje 20.5× (57 objava)
+- slika: prosječno iskakanje 5.7× (15 objava)
 
 ## Hashtagovi u najboljim objavama
 
-#canva (1), #canvaxmattel (1), #marketingtools (1), #smallbusiness (1), #digitalmarketing (1), #seo (1)
+#canva (2), #canvaxmattel (1), #canvaai (1), #seotips (1), #seo (1), #localseo (1), #digitalmarketing (1), #npdigital (1)
 
 ## Objave koje su najviše iskočile (ideje, ne kopirati)
 
 | Iskakanje | Nalog | Format | ♥ | 💬 | Pregledi | Hook (prvi red) | Link |
 |---|---|---|---|---|---|---|---|
-| 128.6× | @garyvee | reels | 227340 | 5821 | 3853971 | Everyone has their own adversity … some are bigger than others … but I deeply ad | [otvori](https://www.instagram.com/reel/DfpMAP7x4i7/) |
-| 75.5× | @canva | slika | 43034 | 928 | – | After all, we’re all part of the same Teams. | [otvori](https://www.instagram.com/p/Dfq4usPl2Xv/) |
-| 58.6× | @garyvee | reels | 111034 | 182 | 1594264 | Please look at my face... | [otvori](https://www.instagram.com/reel/DfsmLHEMnSx/) |
-| 51.3× | @canva | karusel | 30387 | 247 | – | Fingers crossed we all get an invitation to Pingu’s party. 🤞🏻🎂 | [otvori](https://www.instagram.com/p/DfC0BPYiWgA/) |
-| 40.2× | @garyvee | reels | 73781 | 916 | 2544463 | I’m stunned that people think my POV on age means they should be lazy or complac | [otvori](https://www.instagram.com/reel/Dfsy0iWMHD7/) |
-| 37.2× | @garyvee | reels | 70537 | 76 | 2857667 | Once you get to a place where you love “doing” more than “getting there”, you’ve | [otvori](https://www.instagram.com/reel/Dfpys9JgA2k/) |
-| 34.3× | @garyvee | karusel | 63278 | 674 | – | Life is how you see 👀 it …..  | [otvori](https://www.instagram.com/p/Dfn4j8QjIUN/) |
-| 27.7× | @garyvee | karusel | 39145 | 4526 | – | Reminders on your phone tend to work. | [otvori](https://www.instagram.com/p/DfqP1v1jNqR/) |
-| 20.7× | @canva | reels | 12146 | 130 | 336393 | when the deck matches the fantasy🪽do you approve, victoriassecret? | [otvori](https://www.instagram.com/reel/DezXZcqxE3V/) |
-| 13.4× | @garyvee | reels | 25049 | 172 | 1291113 | The impatience in the world 🌍 grounded in insecurity that triggers people to wan | [otvori](https://www.instagram.com/reel/Dfvia1jMRYv/) |
-| 11.8× | @garyvee | karusel | 18335 | 1364 | – | Comment “Analog” to get the full article of why I think analog is coming back. | [otvori](https://www.instagram.com/p/Dfs3npZjmTe/) |
-| 8.0× | @neilpatel | reels | 811 | 21 | 38786 | Most businesses are paying for tools they could get for free. The Meta Ad Librar | [otvori](https://www.instagram.com/reel/Dffd8WFEvPE/) |
-| 5.5× | @canva | reels | 1807 | 513 | 77714 | Introducing Canva Craft 🚀  | [otvori](https://www.instagram.com/reel/De0WqVZiMhh/) |
-| 4.5× | @neilpatel | slika | 427 | 21 | – | Social media will shift from being the most popular channel consumers use to dis | [otvori](https://www.instagram.com/p/DfnnGDBCJ64/) |
-| 3.2× | @garyvee | reels | 5824 | 97 | 477534 | I’m thinking about getting back into the wine game 🍷 | [otvori](https://www.instagram.com/reel/DfsM2f0AuUE/) |
+| 686.3× | @garyvee | reels | 96969 | 620 | 1363307 | Pls if you’re under 30 watch this 20 | [otvori](https://www.instagram.com/reel/Df4ovJ3gyjR/) |
+| 354.5× | @garyvee | reels | 50319 | 241 | 1372937 | Stop giving a f*ck about what other people think about you , and focus on yourse | [otvori](https://www.instagram.com/reel/Df4sbXggU06/) |
+| 320.2× | @garyvee | karusel | 42454 | 1218 | – | I’m not playing ….. you need to do all of these in the next 42 days ….. | [otvori](https://www.instagram.com/p/Df7QPw_kfaZ/) |
+| 216.2× | @garyvee | karusel | 30492 | 216 | – | Listen to yourself speak - break it down - understand it - simplify it - | [otvori](https://www.instagram.com/p/Df5tl8_DkHl/) |
+| 70.0× | @canva | slika | 44132 | 964 | – | After all, we’re all part of the same Teams. | [otvori](https://www.instagram.com/p/Dfq4usPl2Xv/) |
+| 58.5× | @garyvee | karusel | 7145 | 426 | – | Comment “Hussle” to get the link to the conversation🙏 | [otvori](https://www.instagram.com/p/Df9zlJEkcPL/) |
+| 46.4× | @canva | karusel | 30436 | 246 | – | Fingers crossed we all get an invitation to Pingu’s party. 🤞🏻🎂 | [otvori](https://www.instagram.com/p/DfC0BPYiWgA/) |
+| 34.1× | @canva | karusel | 20371 | 857 | – | AI is everywhere. When and how you use it should always be your choice. | [otvori](https://www.instagram.com/p/Df7Fiw4kUH0/) |
+| 20.6× | @garyvee | reels | 2877 | 31 | 85561 | If you are a kind person who is not trying to hurt anyone, give yourself some cr | [otvori](https://www.instagram.com/reel/Df7XDhWghap/) |
+| 19.2× | @garyvee | reels | 2760 | 2 | 59412 | “Figuring out life” at 18, 28, 36... is ludicrous. I don’t know a 40-year-old wh | [otvori](https://www.instagram.com/reel/Df4yPmlMALV/) |
+| 18.7× | @canva | reels | 12164 | 130 | 337511 | when the deck matches the fantasy🪽do you approve, victoriassecret? | [otvori](https://www.instagram.com/reel/DezXZcqxE3V/) |
+| 15.8× | @garyvee | karusel | 2014 | 85 | – | Comment “Pivot” to get the link to the full conversation 🔑 | [otvori](https://www.instagram.com/p/Df5Del-G7gj/) |
+| 14.8× | @garyvee | reels | 2054 | 27 | 47275 | If you are a kind person who is not trying to hurt anyone, give yourself some cr | [otvori](https://www.instagram.com/reel/Df5wnKbsWBi/) |
+| 5.0× | @canva | reels | 1819 | 514 | 79532 | Introducing Canva Craft 🚀  | [otvori](https://www.instagram.com/reel/De0WqVZiMhh/) |
+| 2.9× | @neilpatel | reels | 228 | 11 | 12735 | Writing new posts instead of updating old ones. Chasing big keywords. Keyword st | [otvori](https://www.instagram.com/reel/Df2pJ_7AP-M/) |
