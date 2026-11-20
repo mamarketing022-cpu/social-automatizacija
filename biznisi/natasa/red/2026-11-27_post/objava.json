@@ -1,5 +1,5 @@
 {
-  "datum": "2026-11-20",
+  "datum": "2026-11-27",
   "vrijeme": "14:00",
   "tip": "post",
   "mediji": [
@@ -14,6 +14,5 @@
     "#salontuzla",
     "#kozmetickisalonnatasa"
   ],
-  "status": "rezerva",
-  "napomena": "korisnik 15.11.: materijali za povremenu upotrebu; spremno za neki drugi termin"
+  "status": "odobreno"
 }
