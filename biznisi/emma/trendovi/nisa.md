@@ -1,25 +1,23 @@
 # Trendovi u niši – emma
 
-Ažurirano: 15.11.2026. 10:14. Zadnjih 30 dana, nalozi iz `uzori.txt`.
+Ažurirano: 20.11.2026. 18:04. Zadnjih 30 dana, nalozi iz `uzori.txt`.
 Iskakanje = angažman objave / uobičajeni (medijan) angažman tog naloga; 3× znači 3 puta bolje od njihovog prosjeka.
 
 ## Praćeni nalozi
 
-- @mejuri: 1329819 pratilaca, 20 objava u 30 dana, medijan 578
-- @monicavinader: 910559 pratilaca, 24 objava u 30 dana, medijan 233
-- @missomalondon: 669634 pratilaca, 25 objava u 30 dana, medijan 152
-- @kendrascott: 1580261 pratilaca, 25 objava u 30 dana, medijan 803
-- @pandora: 466483 pratilaca, 0 objava u 30 dana, medijan 0
-- @swarovski: 9279817 pratilaca, 24 objava u 30 dana, medijan 23106.5
-- @zlataragoldshop: 14088 pratilaca, 25 objava u 30 dana, medijan 10
-- @zlatarnakrizek: nije dostupan (nije Business/Creator ili ne postoji)
-- @zlatarnadivjak: 87 pratilaca, 0 objava u 30 dana, medijan 17.5
+- @mejuri: 1330723 pratilaca, 20 objava u 30 dana, medijan 604.5
+- @monicavinader: 916805 pratilaca, 25 objava u 30 dana, medijan 238
+- @missomalondon: 670651 pratilaca, 25 objava u 30 dana, medijan 173
+- @kendrascott: 1581147 pratilaca, 25 objava u 30 dana, medijan 852
+- @pandora: 466501 pratilaca, 0 objava u 30 dana, medijan 0
+- @swarovski: 9286208 pratilaca, 22 objava u 30 dana, medijan 26019
+- @zlataragoldshop: 14087 pratilaca, 24 objava u 30 dana, medijan 11
 
 ## Koji format iskače
 
-- karusel: prosječno iskakanje 2.7× (46 objava)
-- reels: prosječno iskakanje 2.3× (60 objava)
-- slika: prosječno iskakanje 2.3× (37 objava)
+- karusel: prosječno iskakanje 1.4× (45 objava)
+- reels: prosječno iskakanje 2.6× (64 objava)
+- slika: prosječno iskakanje 1.9× (32 objava)
 
 ## Hashtagovi u najboljim objavama
 
@@ -29,18 +27,18 @@ Iskakanje = angažman objave / uobičajeni (medijan) angažman tog naloga; 3× z
 
 | Iskakanje | Nalog | Format | ♥ | 💬 | Pregledi | Hook (prvi red) | Link |
 |---|---|---|---|---|---|---|---|
-| 60.4× | @kendrascott | karusel | 48224 | 89 | – | The collection on every girl’s wishlist... 🎀 | [otvori](https://www.instagram.com/p/De9upAnD06P/) |
-| 35.4× | @mejuri | reels | 19953 | 169 | – | it’s not selfish… it’s research.  | [otvori](https://www.instagram.com/reel/DfXTyHft8Sg/) |
-| 24.5× | @swarovski | slika | 562365 | 898 | – | Timeless beauty and mesmerizing elegance shine as Global Brand Ambassador Ariana | [otvori](https://www.instagram.com/p/DfFXBJasGMm/) |
-| 21.4× | @kendrascott | slika | 16608 | 193 | – | loveshackfancy x kendrascott is back and better than ever. | [otvori](https://www.instagram.com/p/De2EuU7hSh6/) |
-| 12.3× | @kendrascott | reels | 9247 | 204 | 278785 | Meet Marissa. First-time marathon runner, showing up for herself in Kendra Scott | [otvori](https://www.instagram.com/reel/DfFZKfHgWS6/) |
-| 11.9× | @swarovski | reels | 266704 | 2969 | 4717392 | Lights up on JOY: The Swarovski Musical. | [otvori](https://www.instagram.com/reel/De_s3OphajQ/) |
-| 7.4× | @kendrascott | karusel | 5874 | 17 | – | November birthdays, this one's for you. Celebrate your birth month with 50% off  | [otvori](https://www.instagram.com/p/DfSQK4zlw8A/) |
-| 6.1× | @swarovski | reels | 138228 | 663 | 1915011 | Places, please! Our 2026 grand finale is about to begin. | [otvori](https://www.instagram.com/reel/De1SyT-N-pC/) |
-| 5.7× | @kendrascott | karusel | 4541 | 11 | – | Pretty things come in pretty boxes.  | [otvori](https://www.instagram.com/p/DfDFssil7TP/) |
-| 5.4× | @swarovski | reels | 122383 | 1078 | 1226700 | Swarovski Brand Ambassador shota_watanabe_sn_official owns his shine, unwrapping | [otvori](https://www.instagram.com/reel/Dfo5hEGhuCF/) |
-| 4.4× | @swarovski | reels | 100623 | 615 | 1578339 | Guess who’s taking center stage? | [otvori](https://www.instagram.com/reel/De33o_0Bot-/) |
-| 4.0× | @mejuri | reels | 1943 | 126 | – | claudiasulewski knows best.  | [otvori](https://www.instagram.com/reel/DfVDaHAhsXH/) |
-| 3.7× | @mejuri | reels | 2008 | 48 | – | sorry dad… | [otvori](https://www.instagram.com/reel/DfcdEYYx-uo/) |
-| 3.3× | @missomalondon | reels | 462 | 13 | 27152 | WIN YOUR WISHLIST ✨ £1,000 worth of jewellery could be yours… | [otvori](https://www.instagram.com/reel/DfXEB1Ntjbw/) |
-| 2.8× | @mejuri | reels | 1416 | 68 | – | but… are we really trusting the hospital clock? | [otvori](https://www.instagram.com/reel/DfZ4aOPBHB2/) |
+| 34.8× | @mejuri | reels | 20553 | 170 | – | it’s not selfish… it’s research.  | [otvori](https://www.instagram.com/reel/DfXTyHft8Sg/) |
+| 33.3× | @missomalondon | reels | 759 | 1669 | 40346 | COMPETITION CLOSED | [otvori](https://www.instagram.com/reel/Df14_nONA75/) |
+| 21.8× | @swarovski | slika | 563717 | 903 | – | Timeless beauty and mesmerizing elegance shine as Global Brand Ambassador Ariana | [otvori](https://www.instagram.com/p/DfFXBJasGMm/) |
+| 10.7× | @swarovski | reels | 269595 | 2977 | 4749024 | Lights up on JOY: The Swarovski Musical. | [otvori](https://www.instagram.com/reel/De_s3OphajQ/) |
+| 7.2× | @kendrascott | karusel | 6077 | 17 | – | November birthdays, this one's for you. Celebrate your birth month with 50% off  | [otvori](https://www.instagram.com/p/DfSQK4zlw8A/) |
+| 5.4× | @swarovski | reels | 138552 | 664 | 1924474 | Places, please! Our 2026 grand finale is about to begin. | [otvori](https://www.instagram.com/reel/De1SyT-N-pC/) |
+| 5.1× | @swarovski | reels | 130165 | 1135 | 1375431 | Swarovski Brand Ambassador shota_watanabe_sn_official owns his shine, unwrapping | [otvori](https://www.instagram.com/reel/Dfo5hEGhuCF/) |
+| 4.6× | @kendrascott | reels | 3642 | 88 | 118457 | A gift to look forward to, day after day. Our 12 Days of Joy Advent Calendar bri | [otvori](https://www.instagram.com/reel/Df0fGu7FrV8/) |
+| 4.0× | @swarovski | karusel | 99271 | 1335 | – | maluborgesm always dresses for the occasion. Follow her lead and experience our  | [otvori](https://www.instagram.com/p/Df4kCFtjFxf/) |
+| 3.9× | @mejuri | reels | 1958 | 127 | – | claudiasulewski knows best.  | [otvori](https://www.instagram.com/reel/DfVDaHAhsXH/) |
+| 3.9× | @swarovski | reels | 100873 | 616 | 1586477 | Guess who’s taking center stage? | [otvori](https://www.instagram.com/reel/De33o_0Bot-/) |
+| 3.8× | @mejuri | reels | 2137 | 50 | – | sorry dad… | [otvori](https://www.instagram.com/reel/DfcdEYYx-uo/) |
+| 3.8× | @kendrascott | slika | 3181 | 11 | – | The moment you’ve been waiting for is finally here. Sign up to become an Kendra  | [otvori](https://www.instagram.com/p/Df5FbSoF-5c/) |
+| 3.3× | @monicavinader | karusel | 647 | 46 | – | Gifts are served. Our signature MV packaging, prepared by darlingitspasta | [otvori](https://www.instagram.com/p/Df2bAQXjC7W/) |
+| 3.1× | @missomalondon | reels | 481 | 17 | 28735 | WIN YOUR WISHLIST ✨ £1,000 worth of jewellery could be yours… | [otvori](https://www.instagram.com/reel/DfXEB1Ntjbw/) |
