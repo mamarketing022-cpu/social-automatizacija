@@ -1,0 +1,44 @@
+name: Odgovori na KATALOG komentare
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # pokreće se svakih 10 min, a svaki run provjerava komentare svake minute
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: katalog
+  cancel-in-progress: false
+
+jobs:
+  katalog:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Odgovori na komentare
+        env:
+          TOKEN_ZLATARNA_KORZO: ${{ secrets.TOKEN_ZLATARNA_KORZO }}
+        run: |
+          git pull --ff-only
+          python -u alat/katalog.py --minuta 10 --pauza 60
+
+      - name: Sačuvaj stanje (koji komentari su odgovoreni)
+        if: always()
+        run: |
+          git config user.name "katalog-bot"
+          git config user.email "katalog-bot@users.noreply.github.com"
+          git add biznisi/*/katalog/stanje.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -m "Katalog: stanje odgovora"
+          for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done
+          exit 1

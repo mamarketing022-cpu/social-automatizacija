@@ -32,6 +32,14 @@
     "token_env": "TOKEN_FINAL_TOUCH",
     "mreze": ["fb", "ig"]
   },
+  "zlatarna-korzo": {
+    "api": "facebook",
+    "page_id": "439647812890409",
+    "ig_id": "17841477185967987",
+    "token_env": "TOKEN_ZLATARNA_KORZO",
+    "mreze": ["fb", "ig"],
+    "_napomena": "Za sada samo automatski odgovor na komentar KATALOG (biznisi/zlatarna-korzo/katalog). Token treba i pages_read_user_content, pages_manage_engagement, instagram_manage_comments."
+  },
   "black-prince": {
     "api": "instagram",
     "ig_id": "17841404757130953",

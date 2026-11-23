@@ -1,0 +1,24 @@
+{
+  "_napomena": "Automatski odgovor na komentar KATALOG (alat/katalog.py). Javni odgovori se vrte izmiješano, nikad isti dvaput zaredom. Vrijeme je po Sarajevu. aktivno_do: null = bez kraja.",
+  "ukljuceno": true,
+  "kljucne_rijeci": ["katalog", "catalog"],
+  "mreze": ["fb", "ig"],
+  "aktivno_od": "2026-11-26 17:00",
+  "aktivno_do": "2026-11-30 17:00",
+  "dana_unazad": 14,
+  "javni_odgovori": [
+    "Hvala vam! 🖤 Katalog vam je stigao u inbox, provjerite poruke ✨",
+    "Poslali smo vam katalog u privatnu poruku 💌 Uživajte u listanju!",
+    "Katalog vas već čeka u porukama ✨ Javite nam redni broj artikla koji vam se svidi i rezervišemo ga za vas.",
+    "Drago nam je što vas zanima! 💛 Katalog smo vam poslali u inbox.",
+    "Stigao vam je katalog u poruci 📩 Ako ga ne vidite, provjerite i zahtjeve za poruke.",
+    "Hvala na komentaru! 🖤 Katalog je u vašem inboxu, sretno pri odabiru ✨",
+    "Katalog je poslan u poruci 💌 Za sva pitanja tu smo, a vidimo se i u Zlatarni Korzo!"
+  ],
+  "privatna_poruka": {
+    "_napomena": "Isključeno dok Meta ne odobri dozvole pages_messaging i instagram_manage_messages (Advanced Access). Do tada katalog u inbox šalje Meta Business Suite automatizacija 'Comment to message'.",
+    "ukljuceno": false,
+    "link": "",
+    "tekst": "Hvala! 🖤 Evo kataloga za Crni petak: {link}\nSniženje vrijedi do ponedjeljka 30.11. u 17 h. Koji artikl vam se sviđa? Pošaljite nam redni broj ovdje i rezervišemo ga za vas."
+  }
+}
