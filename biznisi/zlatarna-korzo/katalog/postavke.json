@@ -1,6 +1,6 @@
 {
   "_napomena": "Automatski odgovor na komentar KATALOG (alat/katalog.py). Javni odgovori se vrte izmiješano, nikad isti dvaput zaredom. Vrijeme je po Sarajevu. aktivno_do: null = bez kraja.",
-  "ukljuceno": true,
+  "ukljuceno": false,
   "kljucne_rijeci": ["katalog", "catalog"],
   "mreze": ["fb", "ig"],
   "aktivno_od": "2026-11-23 00:00",
