@@ -41,4 +41,5 @@
     Ako je utakmica dan prije nekog dana koji nije pon/sri/pet, objava ide tog dana, mimo rasporeda.
   - Više utakmica u nizu: svaka dobija svoj post dan prije (npr. utakmice 3. i 4. → post 2. za 3., post 3. za 4.).
   - Datum, vrijeme i protivnika uvijek provjeriti (web), ne izmišljati.
+  - Najave klupskih utakmica (npr. Liga prvaka) UVIJEK sa grbovima timova (pored imena kluba); reprezentacije sa zastavama. Stil kao njihovi plakati: stadion, krupna imena, vrijeme, "Rezervacije u DM", bez fotografija ljudi (uputa od 23.11.2026).
   - I dalje ide na odobrenje korisniku prije objave.
