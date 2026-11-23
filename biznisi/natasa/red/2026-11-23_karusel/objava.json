@@ -20,5 +20,11 @@
     "#kozmetickisalonnatasa"
   ],
   "izvor": "tekst iz IG objave salona 30.09.2024; fotografije klijentica s IG-a (25.10.2025 i 25.02.2025), nova obrada",
-  "status": "odobreno"
+  "status": "objavljeno",
+  "rezultat": {
+    "fb": "858659460889970_1750235307028389",
+    "ig": "18197272225355603"
+  },
+  "objavljeno_u": "2026-11-23T14:00",
+  "provjereno": "2026-11-23T14:10"
 }
