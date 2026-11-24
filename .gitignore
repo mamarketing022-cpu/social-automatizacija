@@ -9,3 +9,6 @@ biznisi/*/brend/*screenshot*
 # Jednokratne skripte s kodovima za prijavu
 alat/_*.ps1
 alat/_*.cmd
+
+# Privatno za katalog automatiku (PDF, spisak kupaca kojima je poslano)
+biznisi/*/katalog/privatno/
