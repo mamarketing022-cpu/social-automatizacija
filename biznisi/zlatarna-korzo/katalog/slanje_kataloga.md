@@ -1,6 +1,6 @@
 # Slanje kataloga za Crni petak u privatne poruke (Zlatarna Korzo)
 
-Zakazani zadatak `korzo-katalog-poruke` ovo radi svaki dan u **9:00 i 19:00**, od 25.11. do 30.11.2026.
+Zakazani zadatak `korzo-katalog-poruke` ovo radi svaki dan u **9:00 i 19:00**, od 24.11. do 30.11.2026.
 Javne odgovore ispod komentara radi GitHub (`alat/katalog.py`), ne ovaj zadatak.
 
 ## Fajlovi (lokalno, NE idu na GitHub – folder `privatno/` je u .gitignore)
