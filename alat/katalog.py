@@ -197,6 +197,13 @@ def obradi_biznis(biznis, proba):
     if (pocetak and sad_lokalno < pocetak) or (kraj and sad_lokalno > kraj):
         print(f"  {biznis}: automatika nije aktivna sada ({postavke.get('aktivno_od')} – {postavke.get('aktivno_do') or 'bez kraja'})")
         return None
+    tihi = postavke.get("tihi_sati")  # npr. {"od": "22:00", "do": "08:00"}: noću se ne odgovara
+    if tihi:
+        sada = sad_lokalno.strftime("%H:%M")
+        noc = (tihi["od"] <= sada or sada < tihi["do"]) if tihi["od"] > tihi["do"] else (tihi["od"] <= sada < tihi["do"])
+        if noc:
+            print(f"  {biznis}: noćna pauza ({tihi['od']}–{tihi['do']}), nastavlja se ujutro")
+            return None
 
     od_utc = sad - timedelta(days=postavke.get("dana_unazad", 14))
     kljucne = postavke["kljucne_rijeci"]
