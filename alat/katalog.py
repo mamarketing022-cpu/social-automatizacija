@@ -200,7 +200,14 @@ def obradi_biznis(biznis, proba):
 
     od_utc = sad - timedelta(days=postavke.get("dana_unazad", 14))
     kljucne = postavke["kljucne_rijeci"]
-    verzije = postavke["javni_odgovori"]
+    # Prije izlaska kataloga (najava_do) idu najavni odgovori, poslije obični.
+    najava_do = lokalno(postavke.get("najava_do"))
+    if najava_do and sad_lokalno < najava_do and postavke.get("najava_odgovori"):
+        skup, verzije = "najava", postavke["najava_odgovori"]
+    else:
+        skup, verzije = "glavni", postavke["javni_odgovori"]
+    najvise = postavke.get("najvise_odgovora_u_minuti", 8)
+    poslano = 0
     privatna = postavke.get("privatna_poruka", {})
     mreze = [m for m in postavke.get("mreze", ["fb", "ig"]) if m in nalog["mreze"]]
 
@@ -232,8 +239,11 @@ def obradi_biznis(biznis, proba):
             continue
 
         if proba:
-            print(f"  [proba] {biznis} {k['mreza']} komentar {k['id']}: odgovorio bih")
+            print(f"  [proba] {biznis} {k['mreza']} komentar {k['id']}: odgovorio bih ({skup})")
             continue
+        if poslano >= najvise:
+            print(f"  {biznis}: {najvise} odgovora u ovom krugu, ostali u idućem (da ne izgleda kao spam)")
+            break
 
         try:
             if vec_odgovoreno(nalog, token, k, svoje_ime):
@@ -256,14 +266,18 @@ def obradi_biznis(biznis, proba):
                 zapis["dm_greska"] = str(e)[:300]
                 print(f"    ! privatna poruka za {k['id']} nije poslana: {str(e)[:300]}")
 
-        verzija = sljedeca_verzija(stanje, len(verzije))
+        rotacija = stanje.setdefault("rotacija", {}).setdefault(skup, {})
+        verzija = sljedeca_verzija(rotacija, len(verzije))
+        if poslano:
+            time.sleep(4)  # razmak između odgovora
+        poslano += 1
         try:
             javno_odgovori(token, k, verzije[verzija])
-            zapis.update({"javno": "poslano", "verzija": verzija + 1, "gotovo": True})
+            zapis.update({"javno": "poslano", "skup": skup, "verzija": verzija + 1, "gotovo": True})
             zapis.pop("greska", None)
-            print(f"  {biznis} {k['mreza']} {k['id']}: javni odgovor (verzija {verzija + 1})")
+            print(f"  {biznis} {k['mreza']} {k['id']}: javni odgovor ({skup}, verzija {verzija + 1})")
         except RuntimeError as e:
-            stanje["red_verzija"] = [verzija] + stanje.get("red_verzija", [])  # verzija nije potrošena
+            rotacija["red_verzija"] = [verzija] + rotacija.get("red_verzija", [])  # verzija nije potrošena
             zapis["pokusaja"] = zapis.get("pokusaja", 0) + 1
             zapis["greska"] = str(e)[:300]
             if zapis["pokusaja"] >= NAJVISE_POKUSAJA:
