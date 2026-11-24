@@ -1,29 +1,27 @@
 {
-  "_napomena": "Automatski odgovor na komentar KATALOG (alat/katalog.py). Javni odgovori se vrte izmiješano, nikad isti dvaput zaredom. Vrijeme je po Sarajevu. aktivno_do: null = bez kraja. Do 'najava_do' ide 'najava_odgovori' (katalog još nije izašao), poslije 'javni_odgovori'.",
+  "_napomena": "Automatski odgovor na komentar KATALOG (alat/katalog.py). Javni odgovori se vrte izmiješano, nikad isti dvaput zaredom. Vrijeme je po Sarajevu. Katalog (PDF) u privatne poruke šalje Claude preko Meta Business Suite svaki dan u 9:00 i 19:00, zato odgovori kažu 'šaljemo'.",
   "ukljuceno": true,
-  "kljucne_rijeci": ["katalog", "catalog"],
-  "mreze": ["fb", "ig"],
+  "kljucne_rijeci": [
+    "katalog",
+    "catalog"
+  ],
+  "mreze": [
+    "fb",
+    "ig"
+  ],
   "aktivno_od": "2026-11-23 00:00",
   "aktivno_do": "2026-11-30 17:00",
   "dana_unazad": 14,
   "najvise_odgovora_u_minuti": 8,
-  "najava_do": "2026-11-26 18:00",
-  "najava_odgovori": [
-    "Hvala na interesovanju! 🖤 Katalog izlazi u četvrtak navečer i šaljemo vam ga u inbox ✨",
-    "Zabilježili smo vas 💌 Čim katalog izađe u četvrtak navečer, stiže vam u poruci.",
-    "Super! ✨ Katalog za Crni petak šaljemo vam u inbox u četvrtak navečer.",
-    "Hvala vam! 💛 U četvrtak navečer katalog stiže u vaše poruke, a sniženje počinje u petak.",
-    "Tu ste na pravom mjestu 🖤 Katalog vam šaljemo u inbox čim izađe, u četvrtak navečer.",
-    "Hvala na komentaru! 📩 Katalog stiže u četvrtak navečer, provjerite poruke (i zahtjeve za poruke)."
-  ],
+  "najava_do": null,
   "javni_odgovori": [
-    "Hvala vam! 🖤 Katalog vam je stigao u inbox, provjerite poruke ✨",
-    "Poslali smo vam katalog u privatnu poruku 💌 Uživajte u listanju!",
-    "Katalog vas već čeka u porukama ✨ Javite nam redni broj artikla koji vam se svidi i rezervišemo ga za vas.",
-    "Drago nam je što vas zanima! 💛 Katalog smo vam poslali u inbox.",
-    "Stigao vam je katalog u poruci 📩 Ako ga ne vidite, provjerite i zahtjeve za poruke.",
-    "Hvala na komentaru! 🖤 Katalog je u vašem inboxu, sretno pri odabiru ✨",
-    "Katalog je poslan u poruci 💌 Za sva pitanja tu smo, a vidimo se i u Zlatarni Korzo!"
+    "Hvala vam! 🖤 Katalog vam šaljemo u inbox, provjerite poruke ✨",
+    "Katalog stiže u vašu privatnu poruku 💌 Uživajte u listanju!",
+    "Šaljemo vam katalog u poruci ✨ Javite nam redni broj artikla koji vam se svidi i rezervišemo ga za vas.",
+    "Drago nam je što vas zanima! 💛 Katalog vam stiže u inbox.",
+    "Katalog vam šaljemo u poruci 📩 Ako ga ne vidite, provjerite i zahtjeve za poruke.",
+    "Hvala na komentaru! 🖤 Katalog stiže u vaš inbox, sretno pri odabiru ✨",
+    "Katalog vam stiže u poruci 💌 Za sva pitanja tu smo, a vidimo se i u Zlatarni Korzo!"
   ],
   "privatna_poruka": {
     "_napomena": "Isključeno dok Meta ne odobri dozvole pages_messaging i instagram_manage_messages (Advanced Access). Do tada katalog u inbox šalje Meta Business Suite automatizacija 'Comment to message'.",
