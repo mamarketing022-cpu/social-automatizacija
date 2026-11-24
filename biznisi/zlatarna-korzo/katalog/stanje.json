@@ -801,16 +801,23 @@
       "skup": "glavni",
       "verzija": 3,
       "gotovo": true
+    },
+    "1858604592933069_1309660101308618": {
+      "vrijeme": "2026-11-24T14:19:38.182572+00:00",
+      "mreza": "fb",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 4,
+      "gotovo": true
     }
   },
   "rotacija": {
     "glavni": {
       "red_verzija": [
-        3,
         6,
         4
       ],
-      "zadnja_verzija": 2
+      "zadnja_verzija": 3
     }
   }
 }
