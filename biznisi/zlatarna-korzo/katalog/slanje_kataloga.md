@@ -30,10 +30,22 @@ Javne odgovore ispod komentara radi GitHub (`alat/katalog.py`), ne ovaj zadatak.
    - provjeri na ekranu da se PDF pojavio u razgovoru, upiši `katalog`.
    Ako je osoba u spisku kao `pozdrav` i u međuvremenu je odgovorila: pošalji poruku C + PDF, upiši `katalog`.
 4. **Instagram** tab: isto kao Messenger, ali umjesto PDF-a priloži sve slike iz `privatno\stranice\` (00–16).
+   **Od 24.11. u 14 h** uključena je Meta automatika „Comment to message – Katalog Crni petak (do 30.11. 17h)":
+   svako ko NOVO komentariše „katalog" odmah dobije tekstualnu poruku B1 (bez PDF-a). Takvi razgovori su u inboxu
+   sa zadnjom porukom od stranice „Dobar dan! 🖤 Hvala vam što ste komentarisali KATALOG…" i bez PDF-a:
+   u njih samo priloži PDF (bez novog teksta) i upiši `katalog`. Automatiku ne mijenjaj; gasi je zadatak
+   `korzo-katalog-gasenje` 30.11. u 17 h.
+   Provjereno 24.11.: u razgovor koji je Facebook sam kreirao („Facebook je kreirao ovaj razgovor jer je X komentirao…")
+   prolazi poruka + PDF u istom slanju. Ako Meta pokaže crveni uzvičnik (Error) ili „This account can't receive your
+   message", upiši `preskoceno` s napomenom i idi dalje.
+   Tehnički savjet: klik na „Attach a file" otvara sistemski prozor za fajl; prije klika u stranici preusmjeri
+   `HTMLInputElement.prototype.click` za `type=file` (da se input samo doda u DOM), pa `find` → `file_upload`.
 5. **Facebook comments** tab: za svaku objavu, svaki komentar od 23.11.2026. nadalje s riječju „katalog",
-   čija osoba nije u spisku:
+   čija osoba nije u spisku (ispod komentara piše „Send message", a ne „See Chat"):
    - klikni „Send message" ispod komentara → upiši privatni odgovor (jedna od verzija B) → „Send message",
-   - zatim otvori Messenger razgovor s tom osobom i probaj priložiti PDF; ako Meta dozvoli i PDF se vidi → `katalog`,
+     (dugme „Send message" u prozoru klikni pravim klikom, JS klik ne radi; ako iskoči prozor „Automatically reply to
+     comments with a private message", klikni Cancel),
+   - zatim klikni „See Chat" ispod komentara i priloži PDF (24.11. provjereno: prolazi) → `katalog`,
      ako ne dozvoli → `pozdrav` (PDF ide u nekom od idućih krugova kad osoba odgovori).
    - Ako je „Send message" već iskorišten/siv (već poslano ranije), upiši `pozdrav` i idi dalje.
 6. **Instagram comments** tab: isto kao 5, a umjesto PDF-a slike iz `privatno\stranice\`.
