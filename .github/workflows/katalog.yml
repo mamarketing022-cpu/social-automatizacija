@@ -2,7 +2,9 @@ name: Odgovori na KATALOG komentare
 
 on:
   schedule:
-    - cron: "*/10 * * * *"   # pokreće se svakih 10 min, a svaki run provjerava komentare svake minute
+    # GitHub zakazane runove pokreće sa zakašnjenjem (često tek ~1 h), zato svaki run
+    # radi 45 min i provjerava komentare svake minute; idući run se nastavlja na njega.
+    - cron: "*/10 * * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -15,7 +17,7 @@ concurrency:
 jobs:
   katalog:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 55
     steps:
       - uses: actions/checkout@v4
         with:
@@ -30,7 +32,7 @@ jobs:
           TOKEN_ZLATARNA_KORZO: ${{ secrets.TOKEN_ZLATARNA_KORZO }}
         run: |
           git pull --ff-only
-          python -u alat/katalog.py --minuta 10 --pauza 60
+          python -u alat/katalog.py --minuta 45 --pauza 60
 
       - name: Sačuvaj stanje (koji komentari su odgovoreni)
         if: always()
