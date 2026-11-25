@@ -8,6 +8,9 @@
 - Usluge (iz objava): puder obrve, PMU usne, lash liner, microneedling, tretman sa egzozomima,
   Yaqoot glow tretman, peptidna njega GHK-Cu, NAD+ revitalizacija
 - Aktuelno: nagradna igra "2 dobitnice", prijave do 7.11.2026.
+- Black Friday (od 27.11.2026, od Nataše): −50% lasersko uklanjanje trajne šminke, −30% microneedling i tretman kiselinama,
+  −20% puder obrve, kraljevski pedikir 40 KM, solarij kartica 100 min 40 KM. Rezervacije od 26.11. do 1.12.; decembar je popunjen,
+  uplata do 10.12. po akcijskoj cijeni, tretman u prvim slobodnim terminima u januaru.
 
 ## Mreže
 - Instagram: @kozmeticki_salon_natasa_o (Professional, ~3.2K pratilaca)
