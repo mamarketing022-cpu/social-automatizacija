@@ -15,6 +15,12 @@
     "#salontuzla",
     "#kozmetickisalonnatasa"
   ],
-  "status": "odobreno",
-  "napomena": "format pogled iza kulisa; ove sedmice trend-eksperiment je karusel 23.11."
+  "status": "objavljeno",
+  "napomena": "format pogled iza kulisa; ove sedmice trend-eksperiment je karusel 23.11.",
+  "rezultat": {
+    "fb": "29735910136012948",
+    "ig": "18172276624475312"
+  },
+  "objavljeno_u": "2026-11-25T17:03",
+  "provjereno": "2026-11-25T17:13"
 }
