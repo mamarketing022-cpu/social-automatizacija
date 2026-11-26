@@ -1001,19 +1001,152 @@
       "skup": "glavni",
       "verzija": 2,
       "gotovo": true
+    },
+    "1858604592933069_1169083775467581": {
+      "vrijeme": "2026-11-26T08:22:30.371196+00:00",
+      "mreza": "fb",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 5,
+      "gotovo": true
+    },
+    "1858604592933069_1151309670846471": {
+      "vrijeme": "2026-11-26T08:22:30.371196+00:00",
+      "mreza": "fb",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 4,
+      "gotovo": true
+    },
+    "1858604592933069_1887639665583772": {
+      "vrijeme": "2026-11-26T08:22:30.371196+00:00",
+      "mreza": "fb",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 1,
+      "gotovo": true
+    },
+    "1858604592933069_1222755046932922": {
+      "vrijeme": "2026-11-26T08:22:30.371196+00:00",
+      "mreza": "fb",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 7,
+      "gotovo": true
+    },
+    "1858604592933069_1154790304083095": {
+      "vrijeme": "2026-11-26T08:22:30.371196+00:00",
+      "mreza": "fb",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 3,
+      "gotovo": true
+    },
+    "1858604592933069_2199370327348002": {
+      "vrijeme": "2026-11-26T08:22:30.371196+00:00",
+      "mreza": "fb",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 6,
+      "gotovo": true
+    },
+    "1858604592933069_1494646072845469": {
+      "vrijeme": "2026-11-26T08:22:30.371196+00:00",
+      "mreza": "fb",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 5,
+      "gotovo": true
+    },
+    "1858604592933069_1161563236274575": {
+      "vrijeme": "2026-11-26T08:22:30.371196+00:00",
+      "mreza": "fb",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 4,
+      "gotovo": true
+    },
+    "1858604592933069_1076234348163468": {
+      "vrijeme": "2026-11-26T08:24:35.752781+00:00",
+      "mreza": "fb",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 1,
+      "gotovo": true
+    },
+    "1858604592933069_1179360448388688": {
+      "vrijeme": "2026-11-26T08:24:35.752781+00:00",
+      "mreza": "fb",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 7,
+      "gotovo": true
+    },
+    "1858604592933069_1960467908276344": {
+      "vrijeme": "2026-11-26T08:24:35.752781+00:00",
+      "mreza": "fb",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 2,
+      "gotovo": true
+    },
+    "1858604592933069_1129465333404568": {
+      "vrijeme": "2026-11-26T08:24:35.752781+00:00",
+      "mreza": "fb",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 3,
+      "gotovo": true
+    },
+    "1858604592933069_1712777730275440": {
+      "vrijeme": "2026-11-26T08:24:35.752781+00:00",
+      "mreza": "fb",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 6,
+      "gotovo": true
+    },
+    "1858604592933069_989868063736957": {
+      "vrijeme": "2026-11-26T08:24:35.752781+00:00",
+      "mreza": "fb",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 2,
+      "gotovo": true
+    },
+    "1858604592933069_4074456252859836": {
+      "vrijeme": "2026-11-26T08:24:35.752781+00:00",
+      "mreza": "fb",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 1,
+      "gotovo": true
+    },
+    "1858604592933069_4695045770817154": {
+      "vrijeme": "2026-11-26T08:38:45.858818+00:00",
+      "mreza": "fb",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 6,
+      "gotovo": true
+    },
+    "1858604592933069_1447109893794437": {
+      "vrijeme": "2026-11-26T09:04:48.191062+00:00",
+      "mreza": "fb",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 4,
+      "gotovo": true
     }
   },
   "rotacija": {
     "glavni": {
       "red_verzija": [
-        4,
-        3,
-        0,
-        6,
         2,
-        5
+        4,
+        6
       ],
-      "zadnja_verzija": 1
+      "zadnja_verzija": 3
     }
   }
 }
