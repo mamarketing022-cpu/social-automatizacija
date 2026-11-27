@@ -32,3 +32,7 @@
 - (2026-11-06) Objave prave po planu lokalnog rasta: vidi strategija-rasta.md.
 - (2026-11-15) Cijene komada sa emazlatoisrebro.com smiju u objave kad pomažu (korisnik). Uzeti cijenu sa stranice proizvoda na dan pravljenja; za zlato radije bez cijene jer prati dnevnu cijenu.
 - (2026-11-15) Ako korisnik nije poslao materijale: proizvode i slike uzimati SAMO sa emazlatoisrebro.com, ne sa IG profila. Svaki komad nakita smije biti samo u jednoj objavi: prije odabira provjeriti red/ i arhiva/ (objavljene objave).
+
+## Šta radi kod nas
+- (2026-11-27) **Unboxing reels** (ruke otvaraju poklon-kutiju, otkriva se komad, pa komad u upotrebi; hook "Šta je u kutiji?"): 25.11. 8 bodova (2 ♥, 2 💬), najbolji reels do sada, iznad prosjeka 5,7. Koristiti češće za reels.
+- Karuseli prstenja i emotivne teme (10–11 bodova).
