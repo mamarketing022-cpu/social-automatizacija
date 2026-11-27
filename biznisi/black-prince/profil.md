@@ -20,7 +20,8 @@
 - Nikad ne raditi: ?
 
 ## Ponude (od korisnika)
-- Nargila 24h – 24 KM (30.10.2026): u cijeni nargila, 3 doze okusa, kocke ugljena, čup, mašice, pipci; grijač NIJE uključen.
+- Nargila 24h – 24 KM (30.10.2026) = IZNAJMLJIVANJE (nargila za kući na 24h): u cijeni nargila, 3 doze okusa, kocke ugljena, čup, mašice, pipci; grijač NIJE uključen.
+- Nargila u lokalu (za stolom): 8 KM (korisnik, 27.11.2026). Ne miješati s iznajmljivanjem.
 
 ## Raspored
 - Dani: pon (post), sri (video), pet (post)
