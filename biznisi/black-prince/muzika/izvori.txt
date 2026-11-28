@@ -15,3 +15,7 @@ sunset-dark-deep-house-562926.mp3
   https://pixabay.com/music/deep-house-dark-deep-house-562926/
   Licenca: Pixabay Content License (besplatno, bez navođenja autora), nije Content ID registrovana
   Korišteno: red/2026-11-25_reels (dio 0:55.9–1:13)
+
+bp_original_beat_124bpm.wav
+  Originalni beat napravljen u kodu (D:/tools/bp-work/beat.py), bez tuđih semplova – nema autorskih prava trećih strana.
+  Korišteno: red/2026-12-02_reels
