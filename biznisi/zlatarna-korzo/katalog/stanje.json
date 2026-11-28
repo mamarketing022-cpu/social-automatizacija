@@ -2311,19 +2311,89 @@
       "skup": "glavni",
       "verzija": 2,
       "gotovo": true
+    },
+    "18101076218410730": {
+      "vrijeme": "2026-11-28T10:15:28.238689+00:00",
+      "mreza": "ig",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 5,
+      "gotovo": true
+    },
+    "17937975903143766": {
+      "vrijeme": "2026-11-28T10:15:28.238689+00:00",
+      "mreza": "ig",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 3,
+      "gotovo": true
+    },
+    "1864164379043757_2325862607985549": {
+      "vrijeme": "2026-11-28T10:15:28.238689+00:00",
+      "mreza": "fb",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 1,
+      "gotovo": true
+    },
+    "18131592173304043": {
+      "vrijeme": "2026-11-28T10:15:28.238689+00:00",
+      "mreza": "ig",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 7,
+      "gotovo": true
+    },
+    "1864164379043757_1473671044186788": {
+      "vrijeme": "2026-11-28T10:15:28.238689+00:00",
+      "mreza": "fb",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 6,
+      "gotovo": true
+    },
+    "17999110602049279": {
+      "vrijeme": "2026-11-28T10:15:28.238689+00:00",
+      "mreza": "ig",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 4,
+      "gotovo": true
+    },
+    "1863623285764533_2192022608092333": {
+      "vrijeme": "2026-11-28T10:15:28.238689+00:00",
+      "mreza": "fb",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 7,
+      "gotovo": true
+    },
+    "1862940832499445_1845950246738449": {
+      "vrijeme": "2026-11-28T10:15:28.238689+00:00",
+      "mreza": "fb",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 6,
+      "gotovo": true
+    },
+    "18342850072302921": {
+      "vrijeme": "2026-11-28T10:17:40.911715+00:00",
+      "mreza": "ig",
+      "javno": "poslano",
+      "skup": "glavni",
+      "verzija": 4,
+      "gotovo": true
     }
   },
   "rotacija": {
     "glavni": {
       "red_verzija": [
-        4,
-        2,
         0,
-        6,
-        5,
-        3
+        1,
+        2,
+        4
       ],
-      "zadnja_verzija": 1
+      "zadnja_verzija": 3
     }
   }
 }
