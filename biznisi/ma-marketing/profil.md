@@ -31,6 +31,9 @@
 - vrijeme_objave: 14:00
 
 ## Posebne upute od korisnika
+- Reelsi imaju VLASTITU muziku komponovanu u kodu (Tone.js + pravi instrumenti, projekat D:/AI-Tools/ma-muzika), rezovi na udarcima;
+  ne Pixabay pjesmu ni gomilu zvučnih efekata (korisnik 28.11.2026.: stari zvuk „očajan“, nova muzika „dobra je“).
+- Reelsi do ~13 s, pokret i stvaran prizor u prvom kadru, poenta u prve 3 s (analiza 28.11.: doseg 150–500 sa snimkom u pokretu, ~20 s tekstom na crnom).
 - Objave praviti tako da mogu ići i kao plaćena reklama (korisnik, 15.11.2026.): jasna poruka u prvoj sekundi/slici,
   jedan poziv na akciju, bez „link u bio“ u tekstu reklame, bez tuđih logotipa i bez obećanja rezultata.
 

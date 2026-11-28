@@ -10,3 +10,7 @@ Zvučni efekti u red/2026-11-11_reels: paket uz HyperFrames (media-use, bundled 
   Korišteno: red/2026-11-18_reels, nova verzija (dio 0:23–0:40) + zvučni efekti iz paketa HyperFrames
   Korišteno: red/2026-11-25_reels (dio 0:56–1:13) + zvučni efekti iz paketa HyperFrames
   Korišteno: red/2026-12-02_reels (dio 0:02–0:19) + zvučni efekti iz paketa HyperFrames
+
+Vlastita muzika (komponovana u kodu, Tone.js): muzika/vlastita/2026-12-02_mapa.wav + score.js
+  Snimci instrumenata: nbrosowsky/tonejs-instruments (klavir, violončelo), FluidR3 GM (marimba); ritam sintetizovan.
+  Korišteno: red/2026-12-02_reels_mapa
